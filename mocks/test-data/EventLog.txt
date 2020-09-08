@@ -1,0 +1,224 @@
+Table
+EventLog
+0|09/12/2016 07:41:42|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"New schedule created",Detail:{Name:"TestSchedule 20164902",Previous:"",StartPeriod:"20164902",EndPeriod:"20164902",StartShift:"201612061",EndShift:"201612063"}}|BBSS
+0|09/12/2016 07:42:12|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Allocation.txt"}}|BBSS
+0|09/12/2016 07:42:12|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ArtificialFeature.txt"}}|BBSS
+0|09/12/2016 07:42:13|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Attribute.txt"}}|BBSS
+0|09/12/2016 07:42:13|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\AttributeMember.txt"}}|BBSS
+0|09/12/2016 07:42:14|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\AttributeSet.txt"}}|BBSS
+0|09/12/2016 07:42:14|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\AttributeValue.txt"}}|BBSS
+0|09/12/2016 07:42:14|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\AttributeValueFeature.txt"}}|BBSS
+0|09/12/2016 07:42:15|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BB0120164902.TXT"}}|BBSS
+0|09/12/2016 07:42:23|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BB4220164902.txt"}}|BBSS
+0|09/12/2016 07:42:36|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BB5020164901.txt"}}|BBSS
+0|09/12/2016 07:42:38|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSCarSeries.txt"}}|BBSS
+0|09/12/2016 07:42:38|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSColour.txt"}}|BBSS
+0|09/12/2016 07:42:38|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSColourType.txt"}}|BBSS
+0|09/12/2016 07:42:39|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSDestination.txt"}}|BBSS
+0|09/12/2016 07:42:39|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSEndItem.txt"}}|BBSS
+0|09/12/2016 07:42:40|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSEndItemFeature.txt"}}|BBSS
+0|09/12/2016 07:42:42|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSFeature.txt"}}|BBSS
+0|09/12/2016 07:42:42|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSLine.txt"}}|BBSS
+0|09/12/2016 07:42:42|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSLineMapVersion.txt"}}|BBSS
+0|09/12/2016 07:42:43|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSPeriodType.txt"}}|BBSS
+0|09/12/2016 07:42:43|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSProcess.txt"}}|BBSS
+0|09/12/2016 07:42:43|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSProcessStatus.txt"}}|BBSS
+0|09/12/2016 07:42:44|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSShift.txt"}}|BBSS
+0|09/12/2016 07:42:44|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSShop.txt"}}|BBSS
+0|09/12/2016 07:42:44|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSShopLine.txt"}}|BBSS
+0|09/12/2016 07:42:44|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSSystemStatus.txt"}}|BBSS
+0|09/12/2016 07:42:45|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSVehicle.txt"}}|BBSS
+0|09/12/2016 07:42:47|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\BBSSWorkingPeriod.txt"}}|BBSS
+0|09/12/2016 07:42:47|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\CalendarCode.txt"}}|BBSS
+0|09/12/2016 07:42:47|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\CarSeriesColourGroup.txt"}}|BBSS
+0|09/12/2016 07:42:48|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ColourElement.txt"}}|BBSS
+0|09/12/2016 07:42:48|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\CostFunctionType.txt"}}|BBSS
+0|09/12/2016 07:42:48|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ELTRule.txt"}}|BBSS
+0|09/12/2016 07:42:48|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\EventLog.txt"}}|BBSS
+0|09/12/2016 07:42:49|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ExternalVehicleOrderPlan.txt"}}|BBSS
+0|09/12/2016 07:42:49|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ImportFileLayout.txt"}}|BBSS
+0|09/12/2016 07:42:49|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\LineMapVersionZone.txt"}}|BBSS
+0|09/12/2016 07:42:50|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\LinkedZone.txt"}}|BBSS
+0|09/12/2016 07:42:50|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\MapGroupPattern.txt"}}|BBSS
+0|09/12/2016 07:42:51|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\NissanVehicleOrderPlan.txt"}}|BBSS
+0|09/12/2016 07:42:51|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\OrderStatus.txt"}}|BBSS
+0|09/12/2016 07:42:51|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\PenaltyFunction.txt"}}|BBSS
+0|09/12/2016 07:42:51|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ProductionOrderReceiver.txt"}}|BBSS
+0|09/12/2016 07:42:52|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Route.txt"}}|BBSS
+0|09/12/2016 07:42:52|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Rule.txt"}}|BBSS
+0|09/12/2016 07:42:53|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\RuleAttributeSet.txt"}}|BBSS
+0|09/12/2016 07:42:53|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\RuleAttSetRelationship.txt"}}|BBSS
+0|09/12/2016 07:42:53|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\RuleType.txt"}}|BBSS
+0|09/12/2016 07:42:54|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Schedule.txt"}}|BBSS
+0|09/12/2016 07:42:54|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ScheduleScope.txt"}}|BBSS
+0|09/12/2016 07:42:54|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ScheduleSolution.txt"}}|BBSS
+0|09/12/2016 07:42:54|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\SeriesMap.txt"}}|BBSS
+0|09/12/2016 07:42:55|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\SeriesMapPattern.txt"}}|BBSS
+0|09/12/2016 07:42:55|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\SeriesMapZone.txt"}}|BBSS
+0|09/12/2016 07:42:55|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\SeriesSchedule.txt"}}|BBSS
+0|09/12/2016 07:42:56|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ShiftType.txt"}}|BBSS
+0|09/12/2016 07:43:03|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Slot.txt"}}|BBSS
+0|09/12/2016 07:43:07|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\SlotExit.txt"}}|BBSS
+0|09/12/2016 07:43:08|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\SolutionParameter.txt"}}|BBSS
+0|09/12/2016 07:43:08|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\System.txt"}}|BBSS
+0|09/12/2016 07:43:08|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\UserParameter.txt"}}|BBSS
+0|09/12/2016 07:43:08|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\Zone.txt"}}|BBSS
+0|09/12/2016 07:43:09|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ZonePattern.txt"}}|BBSS
+0|09/12/2016 07:43:09|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ZonePatternElement.txt"}}|BBSS
+0|09/12/2016 07:43:09|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ZoneType.txt"}}|BBSS
+0|09/12/2016 07:43:10|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User loaded data from file",Detail:{Filename:"R\:\\BBSS\\Prototype\\Test Data\\NMUK\\Test_4902\\ZoneWorkInProgress.txt"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"Model"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"2.2 Diesel"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"15DAT2"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"22DAT2"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"16ATEUR"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"2PA4ROW"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"16RHDS3"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no values",Detail:{AttributeName:"Second Colour"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttribute.Link()|3|{Summary:"Attribute has no features",Detail:{AttributeName:"Second Colour"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"Model",AttributeValue:"P32S"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"Model",AttributeValue:"P12C"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"Model",AttributeValue:"B12G"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"Model",AttributeValue:"J02C"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"Model",AttributeValue:"GD1A"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"2.2 Diesel",AttributeValue:"2.2 Diesel"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"15DAT2",AttributeValue:"15DAT2"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"22DAT2",AttributeValue:"22DAT2"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"16ATEUR",AttributeValue:"16ATEUR"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"2PA4ROW",AttributeValue:"2PA4ROW"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeValue has no features",Detail:{AttributeName:"16RHDS3",AttributeValue:"16RHDS3"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"1.6 Turbo",AttributeValue:"1.6 Turbo",CarSeries:"F157",FeatureCode:"03612"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"AVM",AttributeValue:"AVM",CarSeries:"E121",FeatureCode:"03394"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Body Type",AttributeValue:"5 Door",CarSeries:"E121",FeatureCode:"03622"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Euro 6",AttributeValue:"Euro 6",CarSeries:"E121",FeatureCode:"03811"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Fixed Seat",AttributeValue:"Fixed Seat",CarSeries:"E121",FeatureCode:"03496"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Glass Roof",AttributeValue:"Glass Roof",CarSeries:"E121",FeatureCode:"03390"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Handle",AttributeValue:"LHD",CarSeries:"E121",FeatureCode:"03405"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Handle",AttributeValue:"RHD",CarSeries:"E121",FeatureCode:"03404"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Hard Car",AttributeValue:"Hard Car",CarSeries:"E121",FeatureCode:"03480"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Hard Car",AttributeValue:"Hard Car",CarSeries:"E121",FeatureCode:"03481"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Hard Car",AttributeValue:"Hard Car",CarSeries:"E121",FeatureCode:"03575"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Leather",AttributeValue:"Leather",CarSeries:"E121",FeatureCode:"03391"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Line 2 Diesel",AttributeValue:"Diesel",CarSeries:"E121",FeatureCode:"03398"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Line 2 Diesel",AttributeValue:"Diesel",CarSeries:"E121",FeatureCode:"03759"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Line 2 Diesel",AttributeValue:"Diesel",CarSeries:"E121",FeatureCode:"03758"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Line 2 Diesel",AttributeValue:"Diesel",CarSeries:"E121",FeatureCode:"03397"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"PGF",AttributeValue:"PGF",CarSeries:"E121",FeatureCode:"03411"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Rear Camera",AttributeValue:"Rr Camera",CarSeries:"E121",FeatureCode:"03392"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"SC Total",AttributeValue:"12SCTOT",CarSeries:"E121",FeatureCode:"03476"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Sliding Seat",AttributeValue:"Slide Seat",CarSeries:"E121",FeatureCode:"03495"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Sports Pack",AttributeValue:"Sports Pack",CarSeries:"E121",FeatureCode:"03576"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Tx",AttributeValue:"Tx",CarSeries:"E121",FeatureCode:"03762"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Tx",AttributeValue:"Tx",CarSeries:"E121",FeatureCode:"03396"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"TKY",CarSeries:"F157",FeatureCode:"TKY"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"LEB",CarSeries:"F157",FeatureCode:"LEB"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"RUM",CarSeries:"F157",FeatureCode:"RUM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"PLT",CarSeries:"H151",FeatureCode:"PLT"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"ASR",CarSeries:"H151",FeatureCode:"ASR"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"JOR",CarSeries:"H151",FeatureCode:"JOR"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"RUM",CarSeries:"J111",FeatureCode:"RUM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"SEN",CarSeries:"J111",FeatureCode:"SEN"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"DOM",CarSeries:"J111",FeatureCode:"DOM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"NIC",CarSeries:"J111",FeatureCode:"NIC"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"NCA",CarSeries:"J111",FeatureCode:"NCA"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"MOM",CarSeries:"J111",FeatureCode:"MOM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"TUN",CarSeries:"J111",FeatureCode:"TUN"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"QAT",CarSeries:"H151",FeatureCode:"QAT"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"ISP",CarSeries:"H151",FeatureCode:"ISP"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"IEU",CarSeries:"H151",FeatureCode:"IEU"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"BLG",CarSeries:"J111",FeatureCode:"BLG"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"ELS",CarSeries:"J111",FeatureCode:"ELS"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"STM",CarSeries:"J111",FeatureCode:"STM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"KNY",CarSeries:"J111",FeatureCode:"KNY"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"MLW",CarSeries:"J111",FeatureCode:"MLW"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"GDL",CarSeries:"J111",FeatureCode:"GDL"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"ITA",CarSeries:"ZE06",FeatureCode:"ITA"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"BOL",CarSeries:"F157",FeatureCode:"BOL"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"DOM",CarSeries:"H151",FeatureCode:"DOM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"PNM",CarSeries:"H151",FeatureCode:"PNM"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"LEB",CarSeries:"H151",FeatureCode:"LEB"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"TUN",CarSeries:"F157",FeatureCode:"TUN"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"PRG",CarSeries:"J111",FeatureCode:"PRG"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"HND",CarSeries:"J111",FeatureCode:"HND"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"IVO",CarSeries:"J111",FeatureCode:"IVO"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|DBAttributeValueFeature.Link()|3|{Summary:"AttributeValueFeature has unknown Feature",Detail:{AttributeName:"Destination",AttributeValue:"ANT",CarSeries:"J111",FeatureCode:"ANT"}}|BBSS
+0|09/12/2016 07:43:27|BBSSWebService|UK-VSS-DEV-001|RuntimeMethodHandle.InvokeMethod()|3|{Summary:"AttributeMember has unknown AttributeValue",Detail:{AttributeName:"Series",AttributeValue:"E121"}}|BBSS
+0|09/12/2016 07:43:35|BBSSWebService|UK-VSS-DEV-001|DBZone.Link()|3|{Summary:"Zone has no slots",Detail:{ZoneCode:"E2"}}|BBSS
+0|09/12/2016 07:43:35|BBSSWebService|UK-VSS-DEV-001|DBZone.Link()|3|{Summary:"Zone has no slots",Detail:{ZoneCode:"F7"}}|BBSS
+0|09/12/2016 07:43:35|BBSSWebService|UK-VSS-DEV-001|DBZone.Link()|3|{Summary:"Zone has no slots",Detail:{ZoneCode:"J6"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"Allocation"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"ArtificialFeature",Records:"2"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"Attribute",Records:"49"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"AttributeMember",Records:"31"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"AttributeSet",Records:"31"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"AttributeValue",Records:"323"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"AttributeValueFeature",Records:"279"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSCarSeries"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSColour",Records:"19"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSColourType",Records:"3"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSDestination",Records:"245"}}|BBSS
+0|09/12/2016 07:44:29|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSEndItem",Records:"844"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSEndItemFeature",Records:"10925"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSFeature",Records:"472"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSLine"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSLineMapVersion",Records:"1"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSPeriodType"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSProcess"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSProcessStatus"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSShift"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSShop"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSShopLine"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSSystemStatus"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"BBSSVehicle",Records:"4933"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"BBSSWorkingPeriod"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"CalendarCode"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"CarSeriesColourGroup",Records:"72"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"ColourElement",Records:"104"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"CostFunctionType"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ELTRule"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"EventLog",Records:"176"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ExternalVehicleOrderPlan"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ImportFileLayout"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"LineMapVersionZone",Records:"47"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"LinkedZone"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"MapGroupPattern"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"NissanVehicleOrderPlan",Records:"4065"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"OrderStatus"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"PenaltyFunction"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ProductionOrderReceiver"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"Route",Records:"7776"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"Rule",Records:"52"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"RuleAttributeSet",Records:"70"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"RuleAttSetRelationship",Records:"3"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"RuleType",Records:"7"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"Schedule"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ScheduleScope"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ScheduleSolution"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"SeriesMap"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"SeriesMapPattern"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"SeriesMapZone"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"SeriesSchedule"}}|BBSS
+0|09/12/2016 07:44:30|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ShiftType"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"Slot",Records:"104045"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"SlotExit"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"SolutionParameter"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"System"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"UserParameter",Records:"69"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"Zone",Records:"47"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ZonePattern"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ZonePatternElement"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is populated",Detail:{TableName:"ZoneType",Records:"6"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Table is empty",Detail:{TableName:"ZoneWorkInProgress"}}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"Total Vehicle\/Routes OK",Detail:"\{Total\:\"2211\"\}"}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"CarSeries Vehicle\/Routes OK",Detail:"\{CarSeries\:\"ZE06\"\,Total\:\"75\"\}"}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"CarSeries Vehicle\/Routes OK",Detail:"\{CarSeries\:\"J111\"\,Total\:\"1398\"\}"}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"CarSeries Vehicle\/Routes OK",Detail:"\{CarSeries\:\"H151\"\,Total\:\"209\"\}"}|BBSS
+0|09/12/2016 07:44:31|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"CarSeries Vehicle\/Routes OK",Detail:"\{CarSeries\:\"F157\"\,Total\:\"529\"\}"}|BBSS
+0|09/12/2016 07:47:26|BBSSWebService|UK-VSS-DEV-001|DBRule.Link()|3|{Summary:"Rule has no linked AttributeSets",Detail:{RuleID:"28"}}|BBSS
+0|09/12/2016 07:47:35|BBSSWebService|UK-VSS-DEV-001|DBRule.Link()|3|{Summary:"Rule has no linked AttributeSets",Detail:{RuleID:"29"}}|BBSS
+0|09/12/2016 07:50:06|BBSSWebService|UK-VSS-DEV-001|DBRule.Link()|3|{Summary:"Rule has no linked AttributeSets",Detail:{RuleID:"65"}}|BBSS
+0|09/12/2016 08:06:39|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User deactivated rule",Detail:{RuleID:"12"}}|BBSS
+0|09/12/2016 08:10:45|BBSSWebService|UK-VSS-DEV-001||2|{Summary:"User activated rule",Detail:{RuleID:"12"}}|BBSS
+0|09/12/2016 08:10:57|BBSSWebService|UK-VSS-DEV-001|DBRule.Link()|3|{Summary:"Rule has no linked AttributeSets",Detail:{RuleID:"12"}}|BBSS
+0|09/12/2016 08:11:07|BBSSWebService|UK-VSS-DEV-001|DBRule.Link()|3|{Summary:"Rule has no linked AttributeSets",Detail:{RuleID:"13"}}|BBSS
+

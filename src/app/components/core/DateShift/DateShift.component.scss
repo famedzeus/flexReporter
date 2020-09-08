@@ -1,0 +1,50 @@
+date-shift-input {
+  display: block;
+  position: relative;
+  width: 200px; // To match @angular/material form field
+
+  // border: 1px solid #f0f0f0;
+  // padding: 0.5rem;
+
+  date-input {
+    margin-right: 1rem;
+    min-width: 60%;
+
+    fieldset > .mat-form-field {
+      width: 100%;
+    }
+  }
+
+  .mat-form-field-infix {
+    width: auto;
+  }
+
+  .mat-form-field-placeholder {
+    overflow: visible;
+  }
+
+  > fieldset {
+    border-radius: 0.25rem;
+    > div {
+      display: flex;
+
+      > .mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+
+
+  .valid-date-shift {
+    // border: 1px solid #7beb00;
+    .form-control, input {
+      color: #3e9d00;
+    }
+  }
+  .invalid-date-shift {
+    // border: 1px solid #FA787E;
+    .form-control {
+		  color:#FA787E;
+    }
+  }
+}

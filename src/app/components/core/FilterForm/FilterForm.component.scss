@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  form.card {
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+  }
+  .card-block {
+    display: flex;
+    padding-bottom: 0;
+  }
+  .card-footer {
+    text-align: right;
+  }
+
+  .mat-card-header {
+    margin-bottom:0;
+  }
+
+  .mat-card-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .toggle-button {
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.03)
+  }
+
+  validatable-input > fieldset > div > *:not(date-shift-input) .mat-form-field-infix {
+    width: 200px;
+  }
+
+  .mat-chip-list {
+    display: inline-block;
+  }
+
+  .flex-cols-4, .flex-cols-3, .flex-cols-2 {
+    > div {
+      padding: 0 1rem;
+    }
+  }
+
+}

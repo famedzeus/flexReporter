@@ -1,0 +1,56 @@
+Table
+Rule
+TestSchedule 20164902|1|1|R|I1|||||||N
+TestSchedule 20164902|2|2|S|O1||1|2||||Y
+TestSchedule 20164902|3|3|S|O1||3|4||||Y
+TestSchedule 20164902|4|4|S|O1||1|2||||Y
+TestSchedule 20164902|5|5|S|O1||2|5||||Y
+TestSchedule 20164902|7|6|S|O1||1|6||||Y
+TestSchedule 20164902|8|7|S|O1||1|2||||Y
+TestSchedule 20164902|9|8|S|O1||3|6||||Y
+TestSchedule 20164902|10|9|S|O1||10|20||||Y
+TestSchedule 20164902|11|10|S|O1||4|5||||Y
+TestSchedule 20164902|12|11|BR|N1|1|1|||||Y
+TestSchedule 20164902|13|12|BR|N1|1|1|||||Y
+TestSchedule 20164902|14|13|S|O1||1|4||||Y
+TestSchedule 20164902|15|14|S|O1||1|4||||Y
+TestSchedule 20164902|16|15|BR|O1|1|1|||||Y
+TestSchedule 20164902|17|16|BR|O1|1|1|||||Y
+TestSchedule 20164902|18|17|S|O1||1|2||||Y
+TestSchedule 20164902|20|18|S|I2||1|3||||Y
+TestSchedule 20164902|22|19|S|O2||1|2||||Y
+TestSchedule 20164902|23|20|S|O2||1|2||||Y
+TestSchedule 20164902|24|21|S|O2||11|20||||Y
+TestSchedule 20164902|25|22|S|O2||1|12||||Y
+TestSchedule 20164902|26|23|BR|O2|1|1|||||N
+TestSchedule 20164902|27|24|BR|O2|1|1|||||N
+TestSchedule 20164902|28|25|BR|O2|1|1|||||Y
+TestSchedule 20164902|29|26|BR|O2|1|1|||||Y
+TestSchedule 20164902|30|27|S|O2||1|7||||Y
+TestSchedule 20164902|31|28|S|O2||1|11||||Y
+TestSchedule 20164902|32|29|S|O2||9|10||||Y
+TestSchedule 20164902|33|30|S|O2||2|3||||Y
+TestSchedule 20164902|35|31|S|O2||10|20||||Y
+TestSchedule 20164902|36|32|S|O2||2|4||||Y
+TestSchedule 20164902|37|33|S|O2||2|3||||Y
+TestSchedule 20164902|42|34|S|O2||1|8||||Y
+TestSchedule 20164902|44|35|BR|O2|1|1|||||Y
+TestSchedule 20164902|45|36|BR|O2|1|1|||||Y
+TestSchedule 20164902|46|37|R|JC|||||||N
+TestSchedule 20164902|47|38|R|JC|||||||N
+TestSchedule 20164902|48|39|R|JD|||||||N
+TestSchedule 20164902|49|40|R|JD|||||||N
+TestSchedule 20164902|50|41|R|JA|||||||N
+TestSchedule 20164902|52|42|R|JB|||||||N
+TestSchedule 20164902|54|43|R|M2|||||||N
+TestSchedule 20164902|55|44|R|M2|||||||N
+TestSchedule 20164902|56|45|R|M1|||||||N
+TestSchedule 20164902|58|46|S|O1||1|3||||Y
+TestSchedule 20164902|59|47|BR|O1|4|1|||||N
+TestSchedule 20164902|60|48|P|JA||||yyyyyNNNNN|||N
+TestSchedule 20164902|61|49|P|JB||||NNNNNyyyyy|||N
+TestSchedule 20164902|62|50|FB|I1|4|6|5||||N
+TestSchedule 20164902|63|51|PV|I1|1|||033033034|||N
+TestSchedule 20164902|64|52|R|O2|||||||Y
+|65|53|BR|I1|30|10|||||Y
+

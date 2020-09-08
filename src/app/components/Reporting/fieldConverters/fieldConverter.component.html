@@ -1,0 +1,160 @@
+<mat-form-field style="width:20%">
+    <mat-select placeholder="Converter" [(value)]="field.customType" (change)="override()">
+        <mat-option *ngFor="let converter of fieldConverters" [disabled]="converter.isDisabled" [value]="converter.name">{{converter.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
+<p><span class="fa fa-info-circle"></span>&nbsp;<i>{{getConverterDescription(field.customType)}}</i></p>
+
+<!-- Schedule period to single string - this is a temp fix for schedulePeriod -->
+<mat-card-content *ngIf="field.customType === 'Enter schedulePeriod as text'">
+    <mat-form-field>
+        <input matInput (change)="converterChanged.emit()" [(ngModel)]="field.string" [placeholder]="field.prop + '  (YYYYWWDD)'">
+    </mat-form-field>
+</mat-card-content>
+
+<!-- Schedule period as single date -->
+<mat-card-content *ngIf="field.customType === 'Enter date within a schedulePeriod'">
+    <mat-form-field>
+        <input matInput (change)="converterChanged.emit()" [(ngModel)]="field.fromDate" [matDatepicker]="picker1" [placeholder]="'date in period'">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+</mat-card-content>
+
+<!-- Milliseconds to Date (Range) -->
+<mat-card-content *ngIf="field.customType === 'Enter milliseconds as a date range' || field.customType === 'schedulePeriod to date'">
+    <mat-form-field>
+        <input matInput (change)="converterChanged.emit()" [(ngModel)]="field.fromDate" [matDatepicker]="picker1" [placeholder]="'from ' + field.prop">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput (change)="converterChanged.emit()" [(ngModel)]="field.toDate" [matDatepicker]="picker2" [placeholder]="'to ' + field.prop">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+</mat-card-content>
+
+<!-- Shiftcode to shift  -->
+<mat-card-content *ngIf="field.customType === 'Enter shiftcode as a date and shift range'">
+    <mat-form-field>
+        <input matInput (change)="converterChanged.emit()" [(ngModel)]="field.fromShiftDate" [matDatepicker]="picker1" [placeholder]="'from date'">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="From shift" (change)="converterChanged.emit()" [(ngModel)]="field.fromShiftNumber">
+            <mat-option value="0">Day</mat-option>
+            <mat-option value="1">Late</mat-option>
+            <mat-option value="2">Night</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput (change)="converterChanged.emit()" [(ngModel)]="field.toShiftDate" [matDatepicker]="picker2" [placeholder]="'to date'">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="To shift" [(ngModel)]="field.toShiftNumber" (change)="converterChanged.emit()">
+            <mat-option value="0">Day</mat-option>
+            <mat-option value="1">Late</mat-option>
+            <mat-option value="2">Night</mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-card-content>
+
+<!-- model variant -->
+<mat-card *ngIf="field.customType === 'Search through text for certain characters'">
+    <mat-card-content>
+        <div *ngFor="let segment of field.characterParser; let i = index;">
+            <mat-form-field>
+                <input (change)="converterChanged.emit()" [placeholder]="'Name'" type="text" matInput [(ngModel)]="segment.name">
+            </mat-form-field>
+            <mat-form-field>
+                <input (change)="converterChanged.emit()" [placeholder]="'Position'" min="1" max="20" type="number" matInput [(ngModel)]="segment.position">
+            </mat-form-field>
+            <mat-form-field>
+                <input (change)="converterChanged.emit()" [placeholder]="'Number of characters'" min="1" max="20" type="number" matInput
+                    [(ngModel)]="segment.numberOfCharacters">
+            </mat-form-field>
+            <mat-form-field>
+                <input (change)="converterChanged.emit()" [placeholder]="'Search terms'" type="text" matInput [(ngModel)]="segment.searchTerm"
+                    matTooltip="Separate search terms by a comma to mean 'OR'">
+            </mat-form-field>
+            <mat-checkbox (change)="converterChanged.emit()" [(ngModel)]="segment.active">Apply to search&nbsp;&nbsp;</mat-checkbox>
+            <button mat-mini-fab (click)="deleteSegment(i)" matTooltip="Delete">
+                <span class="fa fa-trash"></span>
+            </button>
+        </div>
+        <button mat-mini-fab (click)="addSegment()" matTooltip="Add search">
+            <span class="fa fa-plus"></span>&nbsp;<span class="fa fa-search"></span>
+        </button>
+    </mat-card-content>
+</mat-card>
+
+<!-- to feed -->
+<mat-card-content *ngIf="field.customType === 'schedulePeriod to feed' || field.customType === 'date to feed'">
+    <mat-form-field>
+        <input (change)="converterChanged.emit()" [placeholder]="'Number of days back'" type="number" matInput [(ngModel)]="field.feedBackDays">
+    </mat-form-field>
+    <mat-form-field>
+        <input (change)="converterChanged.emit()" [placeholder]="'Number of days forward'" type="number" matInput [(ngModel)]="field.feedForwardDays">
+    </mat-form-field>
+</mat-card-content>
+
+<!-- Multiple delimited list search -->
+<mat-card-content *ngIf="field.customType === 'Delimited text'">
+    <mat-form-field>
+        <input (change)="converterChanged.emit()" [placeholder]="'Separator characters'" type="text" matInput [(ngModel)]="field.separator"
+            matTooltip="Characters that separate each item in list">
+    </mat-form-field>
+    <div *ngFor="let searchTerm of field.searchTerms; let i = index;">
+        <mat-form-field>
+            <input (change)="converterChanged.emit()" [placeholder]="'Search terms'" type="text" matInput [(ngModel)]="searchTerm.searchTerm"
+                matTooltip="Separate search terms by a comma to mean 'OR'">
+        </mat-form-field>
+        <mat-checkbox (change)="converterChanged.emit()" [(ngModel)]="searchTerm.active">Apply to search&nbsp;&nbsp;</mat-checkbox>
+        <button mat-mini-fab (click)="deleteSearchTerm(i)" matTooltip="Delete">
+                <span class="fa fa-trash"></span>
+            </button>
+    </div>
+    <button mat-mini-fab (click)="addSearchTerm()" matTooltip="Add search">
+            <span class="fa fa-plus"></span>&nbsp;<span class="fa fa-search"></span>
+        </button>
+</mat-card-content>
+
+<!-- Zonal entry times -->
+<mat-card-content *ngIf="field.customType === 'Zonal entry times'">
+    <mat-form-field>
+        <input (change)="converterChanged.emit()" [placeholder]="'Separator characters'" type="text" matInput [(ngModel)]="field.separator"
+            matTooltip="Characters that separate each zone and entry time in list">
+    </mat-form-field>
+    <div *ngFor="let searchTerm of field.entryTimes; let i = index;">
+        <mat-form-field>
+            <input (change)="converterChanged.emit()" [placeholder]="'Zone'" type="text" matInput [(ngModel)]="searchTerm.zone" matTooltip="">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput (change)="converterChanged.emit()" [(ngModel)]="searchTerm.entryDateFrom" [matDatepicker]="picker1" [placeholder]="'from entry date'">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput (change)="converterChanged.emit()" [(ngModel)]="searchTerm.entryTimeFrom" [placeholder]="'from entry time (hh:mm:ss)'">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput (change)="converterChanged.emit()" [(ngModel)]="searchTerm.entryDateTo" [matDatepicker]="picker2" [placeholder]="'to entry date'">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput (change)="converterChanged.emit()" [(ngModel)]="searchTerm.entryTimeTo" [placeholder]="'to entry time (hh:mm:ss)'">
+        </mat-form-field>
+        <mat-checkbox (change)="converterChanged.emit()" [(ngModel)]="searchTerm.active">Apply to search&nbsp;&nbsp;</mat-checkbox>
+        <button mat-mini-fab (click)="deleteEntryTime(i)" matTooltip="Delete">
+                <span class="fa fa-trash"></span>
+            </button>
+    </div>
+    <button mat-mini-fab (click)="addEntryTime()" matTooltip="Add search">
+            <span class="fa fa-plus"></span>&nbsp;<span class="fa fa-search"></span>
+        </button>
+</mat-card-content>

@@ -1,0 +1,148 @@
+<!--Shop lines example -->
+<ng-template let-options #shopLines>
+
+    <h3>{{options.reportName}}</h3>
+    <table border="1" class="table table-striped table-bordered dt-responsive nowrap" style="width:90%">
+        <thead>
+            <th *ngFor="let field of options.fields">{{field.displayName}}</th>
+        </thead>
+        <tr *ngFor="let record of options.flexDataSources[options.keydataSourceIndex].dataSet">
+            <td *ngFor="let field of options.fields">
+                <span *ngIf="!field.join">{{record[field.fieldName]}}</span>
+                <span *ngIf="field.join">{{getData(options.flexDataSources[field.join.destdataSourceIndex].dataSet,
+                                                   record[field.join.sourceField],
+                                                   field.join.destField,
+                                                   field.fieldName)}}</span>
+            </td>
+        </tr>
+    </table>
+
+</ng-template>
+
+<!-- Business data -->
+
+
+<!-- Report configurer -->
+<div *ngIf="flexReports">
+
+    <div *ngFor="let flexReport of flexReports" class="panel panel-default" style="width:60%;">
+        <div class="panel-heading">
+            <span class="fa fa-database"></span>&nbsp;{{flexReport.name}} report
+        </div>
+        <br /><br />
+        <!-- USED BUSINESS DATA -->
+        <div class="panel panel-default" style="width:80%;margin:auto">
+            <div class="panel-heading">
+                <span class="fa fa-bar-chart"></span>&nbsp;Use business data
+            </div>
+            <div class="panel-body" style="padding:10px;">
+                <div *ngFor="let dataSource of flexReport.flexDataSources; let i = index;" style="margin:auto;margin-bottom:10px;padding:10px;border:1px SOLID #ddd;width:90%">
+                    <span class="fa fa-2x fa-database"></span>&nbsp;{{dataSource.name}}
+                    <span *ngIf="i === flexReport.keydataSourceIndex">(Main dataset)</span>
+
+                    <!-- DELETE -->
+                    <button style="float:right;margin-right:3px;" type="button" 
+                            (click)="rule.confirmDelete = true" 
+                            class="eases btn btn-secondary" 
+                            data-toggle="tooltip" 
+                            data-placement="bottom" 
+                            data-original-title="Delete">
+                        <i class="fa fa-trash-o" ng-class="breadcrumb.icon" aria-hidden="true"></i>
+                    </button>
+                    
+                </div>
+                <button style="float:right;margin-right:3px;" type="button" 
+                        (click)="createELT(line)" 
+                        class="eases btn btn-secondary" 
+                        ng-disabled="$ctrl.readOnly" 
+                        data-toggle="tooltip" 
+                        data-placement="bottom" 
+                        data-original-title="Add extended lead time">
+                    <i class="fa fa-database" ng-class="breadcrumb.icon" aria-hidden="true"></i>&nbsp;Add data
+                </button>                   
+                <div style="clear:both"></div>     
+            </div>
+            <div class="panel-footer">
+            </div>
+        </div>
+        <br /><br />
+        <!-- USED FIELDS -->
+        <div class="panel panel-default" style="width:80%;margin:auto">
+            <div class="panel-heading">
+                <span class="fa fa-eye"></span>&nbsp;Included data fields in result set
+            </div>
+            <div class="panel-body">
+                <div class="panel-body">
+                    <div *ngFor="let field of flexReport.fields" style="margin:auto;margin-bottom:10px;padding:10px;border:1px SOLID #ddd;width:90%">
+                        <span class="fa fa-2x fa-eye"></span>&nbsp;
+                        <!--<span *ngIf="field.join"><span class="fa fa-arrow-left"></span>&nbsp;<span class="fa fa-database"></span>&nbsp;</span>-->
+                        <b>{{field.displayName}}</b>&nbsp;
+                        <span *ngIf="!field.join">from {{getdataSourceNameByIndex(flexReport.name,flexReport.keydataSourceIndex)}} data </span>
+                        <span *ngIf="field.join"> from {{getdataSourceNameByIndex(flexReport.name,field.join.destdataSourceIndex)}} data </span>
+
+                        <!-- DELETE -->
+                        <button style="float:right;margin-right:3px;" type="button" 
+                                (click)="deleteDisplayField(flexReport.name,field)" 
+                                class="eases btn btn-secondary">
+                            <i class="fa fa-trash-o" ng-class="breadcrumb.icon" aria-hidden="true"></i>
+                        </button>
+
+                        <!-- JOIN? -->
+                        <span *ngIf="field.join" class="rgt" style="margin-right:5px">
+                            {{getdataSourceNameByIndex(flexReport.name,flexReport.keydataSourceIndex)}}&nbsp;<span class="fa fa-database"></span>
+                            <span>
+                                <i>{{field.join.sourceField}}&nbsp;</i>
+                                <span class="fa fa-arrow-left"></span>&nbsp;&nbsp;<span class="fa fa-arrow-right"></span>&nbsp;
+                                <i>{{field.join.destField}}</i>
+                            </span>
+                            <span class="fa fa-database"></span>&nbsp;{{getdataSourceNameByIndex(flexReport.name,field.join.destdataSourceIndex)}}
+                        </span>
+
+                    </div>
+                    <div style="border:1px SOLID #ddd;padding:10px;">
+                        <!-- FIELD SELECTION -->
+                        <span class="fa fa-database"></span>&nbsp;
+                        <select [(ngModel)]="selecteddataSource" (change)="updatedataSourceFields(flexReport)"><option *ngFor="let dataSource of flexReport.flexDataSources" [ngValue]="dataSource">{{dataSource.name}}</option></select>
+                        <span class="fa fa-eye"></span>&nbsp;
+                        <select [(ngModel)]="selecteddataSourceField" (change)="selectedDisplayName = field"><option *ngFor="let field of selecteddataSourceFields" [ngValue]="field">{{field}}</option></select>
+                        Display name <input [(ngModel)]="selectedDisplayName" />
+                        <!-- JOIN SELECTION -->
+                        <br /><br />
+                        <div *ngIf="joinRequired">
+                            Join
+                            <select [(ngModel)]="selectedSourceField"><option *ngFor="let field of flexReport.flexDataSources[0].fields" [value]="field">{{field}}</option></select>
+                            <span class="fa fa-arrow-left"></span>&nbsp;&nbsp;<span class="fa fa-arrow-right"></span>&nbsp;
+                            <select [(ngModel)]="selectedDestField"><option *ngFor="let field of selecteddataSource.fields" [value]="field">{{field}}</option></select>
+                        </div>
+
+                        <button style="float:right;margin-right:3px;" type="button" 
+                                (click)="addDisplayField(flexReport.name)" 
+                                class="eases btn btn-secondary" 
+                                ng-disabled="$ctrl.readOnly" 
+                                data-toggle="tooltip" 
+                                data-placement="bottom" 
+                                data-original-title="Add extended lead time">
+                            <i class="fa fa-eye" ng-class="breadcrumb.icon" aria-hidden="true"></i>&nbsp;Add field
+                        </button>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div style="clear:both"></div>     
+                </div>
+            </div>
+            <div class="panel-footer">
+            </div>
+        </div>
+        <br /><br />
+        <!-- OUTPUT -->
+        <div class="panel panel-default" style="width:80%;margin:auto">
+            <div class="panel-heading">
+                <span class="fa fa-bar-chart"></span>&nbsp;Sample report output
+            </div>
+            <div class="panel-body">
+                <c-flex-reporter [flexReport]="flexReport"></c-flex-reporter>
+            </div>
+        </div>
+        <br /><br />
+    </div>
+</div>
+

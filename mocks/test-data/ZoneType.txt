@@ -1,0 +1,10 @@
+Table
+ZoneType
+S|Standard
+O|Offline
+P1|TopCoat
+PS|Surfacer
+P2|SecondCoat
+W|Wax
+M|MultiZone
+

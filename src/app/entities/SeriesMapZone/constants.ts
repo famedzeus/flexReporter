@@ -1,0 +1,8 @@
+export const additionalSeconds = 'additionalSeconds'
+export const seriesMapName = 'seriesMapName'
+export const pullForwardBy = 'pullForwardBy'
+export const zoneCode = 'zoneCode'
+export const minimumSpacing = 'minimumSpacing'
+export const position = 'position'
+export const ignorePattern = 'ignorePattern'
+export const actualZoneCode = 'actualZoneCode'

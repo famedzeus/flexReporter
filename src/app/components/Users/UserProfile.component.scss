@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  padding: 10px;
+
+  .flex {
+    align-items: center;
+    > *:first-child {
+      padding-right: 1rem;
+    }
+  }
+}

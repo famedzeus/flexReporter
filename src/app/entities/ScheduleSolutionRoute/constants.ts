@@ -1,0 +1,8 @@
+export const scheduleSolutionName = 'scheduleSolutionName'
+export const scheduleScopeName = 'scheduleScopeName'
+export const schedulePeriod = 'schedulePeriod'
+export const routeNumber = 'routeNumber'
+export const vehicleId = 'vehicleId'
+export const offlineTime = 'offlineTime'
+export const kiteflyer = 'kiteflyer'
+export const userAllocated = 'userAllocated'

@@ -1,0 +1,36 @@
+@import '~sass-env-variables';
+
+:host {
+  display: block;
+  height: 300px;
+  width: 560px;
+
+  .msg-box {
+    padding:50px;
+    margin:0;
+    height:100%;
+    background: url($imageUrl + "flex-reporter.png");
+    background-position: center center;
+
+    .cogs {
+      margin-bottom: 4rem;
+      font-size:800%;
+      text-align:center;
+
+      i:first-child {
+        color: #aaa;
+      }
+
+      .secondary-cog {
+        position: relative;
+        left: -53px;
+        top: 45px;
+        color:#ddd;
+      }
+    }
+  }
+
+  h4 {
+    text-align: center;
+  }
+}

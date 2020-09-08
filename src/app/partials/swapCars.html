@@ -1,0 +1,14 @@
+<div class="modal-header">
+	<h3 class="modal-title" id="modal-title">Swap car series</h3>
+</div>
+
+<div class="modal-body" id="modal-body">
+  <div uib-alert class="alert-danger" data-ng-if="$ctrl.src.actualZone != $ctrl.dst.actualZone">Slots are in different zones</div>
+  <div data-ng-if="$ctrl.src.actualZone == $ctrl.dst.actualZone">
+    Please confirm that you wish to swap car series for these slots
+  </div>
+  <div class="modal-footer">
+		<button data-ng-if="$ctrl.src.actualZone == $ctrl.dst.actualZone" class="eases btn btn-primary" type="button" ng-click="$ctrl.swap()">Swap</button>
+		<button class="btn btn-warning" type="button" ng-click="$ctrl.close()">Cancel</button>
+	</div>
+</div>

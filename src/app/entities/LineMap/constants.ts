@@ -1,0 +1,5 @@
+export const id = 'id'
+export const adoptShift = 'adoptShift'
+export const abolishShift = 'abolishShift'
+export const description = 'description'
+export const mapPurpose = 'mapPurpose'

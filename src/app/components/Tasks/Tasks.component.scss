@@ -1,0 +1,19 @@
+:host {
+  display: block;
+
+  .mat-list .mat-list-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .fa-ban {
+    margin-left: 0.8rem;
+  }
+
+  .fa-tasks {
+    margin-right: 0.3rem;
+  }
+
+  warning-card {
+    margin: 1rem;
+  }
+}

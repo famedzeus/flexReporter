@@ -1,0 +1,5 @@
+export * from './Task.component'
+export * from './TasksContainer.component'
+export * from './TasksManager.service'
+export * from './Tasks.module'
+export * from './Tasks.component'

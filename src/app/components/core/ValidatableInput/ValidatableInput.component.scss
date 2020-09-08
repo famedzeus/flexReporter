@@ -1,0 +1,116 @@
+@import "../../../material-palette.scss";
+
+validatable-input {
+  display: inline-block;
+  position: relative;
+
+  fieldset > div {
+    position: relative;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  > div {
+    position: relative;
+  }
+
+  .checkbox {
+
+    label {
+      font-weight: bold;
+      padding-left: 0;
+    }
+    input[type="checkbox"] {
+      position: relative;
+      margin: 0;
+    }
+  }
+
+  .field-info {
+    opacity: 0.25;
+    transition: 0.4s;
+    transform: scale(0.7);
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.05);
+  }
+
+  &:hover {
+    .field-info {
+      opacity: 1;
+      transform: scale(1);
+      transition: 0.4s;
+    }
+  }
+
+  .mat-spinner,
+  .mat-spinner > svg {
+    height: 22px!important;
+    width: 22px!important;
+  }
+
+  .options-loading {
+    display: flex;
+    align-items: center;
+
+    > span {
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  .form-control-feedback {
+    display: none;
+  }
+  .feedback {
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    box-shadow: 0 1vmin 3vmin 0vmin rgba(255,177,177,0.5);
+    color: #fff;
+    font-size: 0.7rem;
+    z-index: 200;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform-origin: center top;
+    transform: scale(1, 0);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  }
+
+  .form-control-feedback {
+    padding: 2vmin;
+    top: 24px;
+    right: 0;
+  }
+
+  .mat-checkbox-layout {
+    margin-top: 11px;
+  }
+}
+
+
+.has-error validatable-input,
+validatable-input.has-error {
+  input[type="text"] + .form-control-feedback {
+    display: block;
+  }
+  &:hover {
+    .feedback {
+      opacity: 1;
+      transform: scale(1, 1);
+      transition: 0.3s;
+      background: mat-color($warning);
+    }
+  }
+
+}

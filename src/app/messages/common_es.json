@@ -1,0 +1,20 @@
+{
+	"Home":"Casa",
+	"Calendars":"Calendars-sp",
+	"Result Detail":"Result Detail-sp",
+	"Manual Edit":"Manual Edit-sp",
+	"System Log":"System Log-sp",
+	"Parameters":"Parameters-sp",
+	"Reports":"Reports-sp",
+	"Routes":"Routes",
+
+	"Name":"Nombre",
+	"Name is required":"El nombre es necesario",
+	"Select Calendar":"Seleccione Calendario",
+	"Calendar":"Calendario",
+	"Edit schedule":"Editar la programación",
+	"Create new schedule":"Nueva cita",
+	"Production lines":"Proucsitone"
+
+
+}

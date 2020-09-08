@@ -1,0 +1,34 @@
+Table
+AttributeSet
+TestSchedule 20164902|ZE06
+TestSchedule 20164902|J111
+TestSchedule 20164902|E121
+TestSchedule 20164902|F157
+TestSchedule 20164902|Tx
+TestSchedule 20164902|P32S Diesel
+TestSchedule 20164902|R9M
+TestSchedule 20164902|4WD L1
+TestSchedule 20164902|Multilink4
+TestSchedule 20164902|RHD
+TestSchedule 20164902|PGF
+TestSchedule 20164902|4WD L2
+TestSchedule 20164902|H5FT CVT
+TestSchedule 20164902|MR16 DDT
+TestSchedule 20164902|Leather
+TestSchedule 20164902|Glass Roof
+TestSchedule 20164902|1.2 Turbo
+TestSchedule 20164902|1.6 Turbo
+TestSchedule 20164902|Line 2 Diesel
+TestSchedule 20164902|AVM
+TestSchedule 20164902|12SCTOT
+TestSchedule 20164902|Slide Seat
+TestSchedule 20164902|Fixed Seat
+TestSchedule 20164902|Sports Pack
+TestSchedule 20164902|NISMO
+TestSchedule 20164902|Hard Car
+TestSchedule 20164902|AWD
+TestSchedule 20164902|R9M CVT
+TestSchedule 20164902|QAB
+TestSchedule 20164902|Surfacer
+TestSchedule 20164902|QQ L2
+

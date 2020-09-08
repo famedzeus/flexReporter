@@ -1,0 +1,52 @@
+Table
+Attribute
+TestSchedule 20164902|Model
+TestSchedule 20164902|Destination
+TestSchedule 20164902|Body Type
+TestSchedule 20164902|Engine
+TestSchedule 20164902|Tx
+TestSchedule 20164902|Handle
+TestSchedule 20164902|Line 2 Diesel
+TestSchedule 20164902|4WD L2
+TestSchedule 20164902|Glass Roof
+TestSchedule 20164902|PGF
+TestSchedule 20164902|Hard Car
+TestSchedule 20164902|Rear Camera
+TestSchedule 20164902|1.6 Turbo
+TestSchedule 20164902|Leather
+TestSchedule 20164902|R9M
+TestSchedule 20164902|AVM
+TestSchedule 20164902|NISMO
+TestSchedule 20164902|4WD L1
+TestSchedule 20164902|Sliding Seat
+TestSchedule 20164902|Fixed Seat
+TestSchedule 20164902|2WD ACI
+TestSchedule 20164902|Multilink4
+TestSchedule 20164902|P32S Diesel
+TestSchedule 20164902|SC Total
+TestSchedule 20164902|Full Leather
+TestSchedule 20164902|Sports Pack
+TestSchedule 20164902|H5FT
+TestSchedule 20164902|MR20
+TestSchedule 20164902|R9M CVT
+TestSchedule 20164902|1.2 Turbo
+TestSchedule 20164902|SV1
+TestSchedule 20164902|H5FT CVT
+TestSchedule 20164902|MR16 L2
+TestSchedule 20164902|MR16 DDT
+TestSchedule 20164902|Perso
+TestSchedule 20164902|Perso All
+TestSchedule 20164902|Euro 6
+TestSchedule 20164902|AWD
+TestSchedule 20164902|2.2 Diesel
+TestSchedule 20164902|15DAT2
+TestSchedule 20164902|22DAT2
+TestSchedule 20164902|16ATEUR
+TestSchedule 20164902|2PA4ROW
+TestSchedule 20164902|16RHDS3
+TestSchedule 20164902|Series
+TestSchedule 20164902|TopCoat
+TestSchedule 20164902|Surfacer
+TestSchedule 20164902|Second Colour
+TestSchedule 20164902|QQ L2
+

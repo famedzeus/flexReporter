@@ -1,0 +1,44 @@
+<mat-card style="width:50%;float:left;">
+    <mat-card-title><span class="fa fa-magic"></span>&nbsp;Data upload wizard</mat-card-title>
+    <mat-horizontal-stepper [linear]="true" #stepper>
+        <mat-step [stepControl]="firstFormGroup" [completed]="false">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel><span class="fa fa-upload"></span>&nbsp;Import data</ng-template>
+                <p>Drag and drop or browse for a data file. Flex reporter will attempt to identify if the file type can be read
+                    successfully.
+                </p>
+                <div class="drop-container" ngFileDrop (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" [class.is-drop-over]="dragOver">
+                    <h4>Drag and drop data file</h4>
+                    <p>
+                        <span>or </span>
+                        <label class="upload-button">
+                        <input type="file" ngFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
+                        <i class="fa fa-folder-open"></i>browse
+                    </label>
+                    </p>
+                    <p class="error-text" *ngIf="uploadError != ''"><span class="fa fa-warning"></span>&nbsp;{{uploadError}}</p>
+                    <p class="success-text" *ngIf="fileUploaded == true"><span class="fa fa-check"></span>&nbsp;File upload successful</p>
+                </div>
+                <!--<button mat-button matStepperNext>Next</button>-->
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" [completed]="validFile">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel ><span class="fa fa-check"></span>&nbsp;Verify file data</ng-template>
+                <p><span class="fa-2x fa fa-file"></span>&nbsp;Analysing file type</p>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step  [completed]="fileUploaded">
+            <ng-template matStepLabel><span class="fa fa-database"></span>&nbsp;Upload to database</ng-template>
+            You are now done.
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</mat-card>

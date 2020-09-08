@@ -1,0 +1,36 @@
+@import "../../../material-palette.scss";
+:host {
+  display: block;
+
+  > .mat-card {
+    padding: 10px 24px;
+
+    &[color="warn"] {
+      background: mat-color($warning, 900);
+      color: #fff;
+
+      .mat-list-item {
+        background: mat-color($warning, 300);
+      }
+    }
+
+    &[color="advise"] {
+      background: #ecc711;
+      color: #4e4410;
+    }
+
+    &[color="info"] {
+      background: mat-color($primary, 100);
+      color: mat-color($primary, 900);
+    }
+
+    p {
+      margin-top: 1.5rem;
+    }
+
+    .mat-card-title {
+      margin-bottom: 0;
+    }
+
+  }
+}

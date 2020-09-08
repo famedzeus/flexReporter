@@ -1,0 +1,23 @@
+:host {
+  display: block;
+
+  .input-container {
+
+    input[type=text], input[type=number] {
+      border: 0;
+      background-color:transparent;
+      width: 100%;
+      outline: none;
+    }
+
+    .btn, .eases {
+      font-size: 120%;
+      position: absolute;
+      text-align: right;
+      float:right;
+      right: 0px;
+      top:0px;
+      padding:0;
+    }
+  }
+}

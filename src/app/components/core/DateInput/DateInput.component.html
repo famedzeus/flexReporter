@@ -1,0 +1,23 @@
+<fieldset>
+  <mat-form-field>
+  <!-- Number or text -->
+    <input
+      matInput
+      [matDatepicker]="picker"
+      type="text"
+      [id]="name"
+      [name]="name"
+      [disabled]="inputDisabled"
+      [(ngModel)]="date"
+      [min]="constraints?.date?.earliest"
+      [max]="constraints?.date?.latest"
+      [placeholder]="label | translate" />
+
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker
+      #picker
+      (selectedChanged)="dateChanged($event)"></mat-datepicker>
+  </mat-form-field>
+</fieldset>
+
+

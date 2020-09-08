@@ -1,0 +1,29 @@
+<fieldset [formGroup]="form"
+  [class.invalid-date-shift]="control && !control.valid && control.touched"
+  [class.valid-date-shift]="control && control.valid && control.touched">
+  <div>
+    <date-input
+      [model]="date"
+      [label]="label"
+      [placeholder]="'date' | translate"
+      [floatPlaceholder]="true"
+      [inputDisabled]="inputDisabled"
+      (onClose)="updateTouched()"
+      (onDateChange)="dateChanged($event)"></date-input>
+    <mat-form-field>
+      <mat-select
+        [(ngModel)]="shift"
+        [ngModelOptions]="{standalone: true}"
+        (ngModelChange)="shiftChanged()"
+        [disabled]="inputDisabled">
+        <mat-option *ngFor="let shift of shiftValues" [value]="shift">{{'shift' + shift | translate}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <input
+      style="position: absolute; left: -10000px"
+      [formControlName]="name"
+      [id]="name"
+      [name]="name" />
+  </div>
+</fieldset>

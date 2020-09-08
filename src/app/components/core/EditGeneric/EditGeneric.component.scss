@@ -1,0 +1,31 @@
+:host {
+  display: block;
+
+  c-alerts > *:last-child() {
+    margin-bottom: 2rem;
+  }
+
+  .modal-content .alert {
+    width: 100%;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .modal-body {
+    edit-form {
+      .mat-raised-button {
+        float: right;
+      }
+    }
+  }
+
+  .modal-footer {
+    clear: both;
+  }
+
+  .btn-warning {
+    float: left;
+  }
+}

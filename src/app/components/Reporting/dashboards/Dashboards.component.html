@@ -1,0 +1,21 @@
+<!-- SAVED REPORTS -->
+<mat-card style="width:100%;float:left;">
+    <mat-card-title><span class="fa fa-desktop"></span>&nbsp;Dashboards</mat-card-title>
+    <ag-grid-angular #grid style="height: 520px" class="ag-theme-material" [rowData]="dashboards" [columnDefs]="dashboardColumns"
+        [gridOptions]="gridOptions">
+    </ag-grid-angular>
+    <mat-form-field style="width:60%">
+        <input matInput type="text" placeholder="Dashboard name" [(ngModel)]="dashboardName" />
+    </mat-form-field>
+    <button mat-raised-button [disabled]="dashboardName === ''" (click)="createDashboard()"><span class="fa fa-desktop"></span>&nbsp;Create dashboard</button>
+
+    
+
+</mat-card>
+
+
+
+<!--<mat-card style="width:100%;float:left;margin-left:10px;">
+    <mat-card-title><span class="fa fa-feed"></span>&nbsp;{{selectedDashboardName}} feeds</mat-card-title>
+    <feeds-component [datasources]="selectedDashboard"></feeds-component>
+</mat-card>-->

@@ -1,0 +1,282 @@
+Table
+AttributeValueFeature
+TestSchedule 20164902|1.2 Turbo|1.2 Turbo|F157|03541
+TestSchedule 20164902|1.2 Turbo|1.2 Turbo|F157|03738
+TestSchedule 20164902|1.6 Turbo|1.6 Turbo|F157|03612
+TestSchedule 20164902|1.6 Turbo|1.6 Turbo|F157|03542
+TestSchedule 20164902|2WD ACI|2WD ACI|J111|03459
+TestSchedule 20164902|4WD L1|4WD L1|J111|03489
+TestSchedule 20164902|4WD L2|4WD L2|F157|03554
+TestSchedule 20164902|AVM|AVM|ZE06|03341
+TestSchedule 20164902|AVM|AVM|J111|03457
+TestSchedule 20164902|AVM|AVM|F157|03544
+TestSchedule 20164902|AVM|AVM|E121|03394
+TestSchedule 20164902|Body Type|5 Door|F157|03623
+TestSchedule 20164902|Body Type|5 Door|ZE06|03620
+TestSchedule 20164902|Body Type|5 Door|E121|03622
+TestSchedule 20164902|Body Type|5 Door|J111|03611
+TestSchedule 20164902|Engine|Diesel|J111|03477
+TestSchedule 20164902|Euro 6|Euro 6|J111|03810
+TestSchedule 20164902|Euro 6|Euro 6|F157|03812
+TestSchedule 20164902|Euro 6|Euro 6|E121|03811
+TestSchedule 20164902|Fixed Seat|Fixed Seat|E121|03496
+TestSchedule 20164902|Full Leather|Full Leather|J111|03514
+TestSchedule 20164902|Glass Roof|Glass Roof|J111|03666
+TestSchedule 20164902|Glass Roof|Glass Roof|F157|03523
+TestSchedule 20164902|Glass Roof|Glass Roof|E121|03390
+TestSchedule 20164902|H5FT CVT|H5FT CVT|J111|03488
+TestSchedule 20164902|H5FT|H5FT|J111|03432
+TestSchedule 20164902|H5FT|H5FT|J111|03746
+TestSchedule 20164902|H5FT|H5FT|J111|03434
+TestSchedule 20164902|H5FT|H5FT|J111|03433
+TestSchedule 20164902|Handle|LHD|F157|03529
+TestSchedule 20164902|Handle|LHD|E121|03405
+TestSchedule 20164902|Handle|LHD|J111|03468
+TestSchedule 20164902|Handle|LHD|ZE06|03322
+TestSchedule 20164902|Handle|RHD|E121|03404
+TestSchedule 20164902|Handle|RHD|J111|03469
+TestSchedule 20164902|Handle|RHD|ZE06|03323
+TestSchedule 20164902|Handle|RHD|F157|03528
+TestSchedule 20164902|Hard Car|Hard Car|F157|03636
+TestSchedule 20164902|Hard Car|Hard Car|F157|03634
+TestSchedule 20164902|Hard Car|Hard Car|E121|03480
+TestSchedule 20164902|Hard Car|Hard Car|E121|03481
+TestSchedule 20164902|Hard Car|Hard Car|F157|03552
+TestSchedule 20164902|Hard Car|Hard Car|F157|03638
+TestSchedule 20164902|Hard Car|Hard Car|E121|03575
+TestSchedule 20164902|Leather|Leather|J111|03456
+TestSchedule 20164902|Leather|Leather|F157|03524
+TestSchedule 20164902|Leather|Leather|E121|03391
+TestSchedule 20164902|Line 2 Diesel|Diesel|E121|03398
+TestSchedule 20164902|Line 2 Diesel|Diesel|E121|03759
+TestSchedule 20164902|Line 2 Diesel|Diesel|E121|03758
+TestSchedule 20164902|Line 2 Diesel|Diesel|F157|03635
+TestSchedule 20164902|Line 2 Diesel|Diesel|E121|03397
+TestSchedule 20164902|MR16 DDT|MR16 DDT|J111|03605
+TestSchedule 20164902|MR16 L2|MR16 L2|F157|03700
+TestSchedule 20164902|MR20|MR20|J111|03437
+TestSchedule 20164902|MR20|MR20|J111|03438
+TestSchedule 20164902|MR20|MR20|J111|03436
+TestSchedule 20164902|MR20|MR20|J111|03435
+TestSchedule 20164902|Multilink4|Multilink4|J111|03492
+TestSchedule 20164902|NISMO|NISMO|F157|03624
+TestSchedule 20164902|P32S Diesel|P32S Diesel|J111|03743
+TestSchedule 20164902|P32S Diesel|P32S Diesel|J111|03452
+TestSchedule 20164902|P32S Diesel|P32S Diesel|J111|03453
+TestSchedule 20164902|P32S Diesel|P32S Diesel|J111|03615
+TestSchedule 20164902|Perso All|Black Perso|F157|03520
+TestSchedule 20164902|Perso All|Red Perso|F157|03521
+TestSchedule 20164902|Perso All|White Perso|F157|03500
+TestSchedule 20164902|Perso All|Yellow Perso|F157|03522
+TestSchedule 20164902|Perso|Perso|F157|03701
+TestSchedule 20164902|PGF|PGF|E121|03411
+TestSchedule 20164902|PGF|PGF|F157|03574
+TestSchedule 20164902|PGF|PGF|J111|03464
+TestSchedule 20164902|R9M CVT|R9M CVT|J111|03572
+TestSchedule 20164902|R9M CVT|R9M CVT|J111|03809
+TestSchedule 20164902|R9M|R9M|J111|03525
+TestSchedule 20164902|Rear Camera|Rr Camera|E121|03392
+TestSchedule 20164902|SC Total|12SCTOT|E121|03476
+TestSchedule 20164902|Sliding Seat|Slide Seat|E121|03495
+TestSchedule 20164902|Sports Pack|Sports Pack|E121|03576
+TestSchedule 20164902|SV1|SV1|J111|03592
+TestSchedule 20164902|Tx|Tx|E121|03762
+TestSchedule 20164902|Tx|Tx|J111|03613
+TestSchedule 20164902|Tx|Tx|F157|03553
+TestSchedule 20164902|Tx|Tx|J111|03614
+TestSchedule 20164902|Tx|Tx|J111|03612
+TestSchedule 20164902|Tx|Tx|J111|03443
+TestSchedule 20164902|Tx|Tx|J111|03745
+TestSchedule 20164902|Tx|Tx|E121|03396
+TestSchedule 20164902|Series|F157|F157|F157
+TestSchedule 20164902|Destination|FRN|F157|FRN
+TestSchedule 20164902|Destination|CEN|F157|CEN
+TestSchedule 20164902|Destination|SAF|F157|SAF
+TestSchedule 20164902|Destination|EGB|F157|EGB
+TestSchedule 20164902|Destination|MOM|F157|MOM
+TestSchedule 20164902|Destination|ASR|F157|ASR
+TestSchedule 20164902|Destination|ITA|F157|ITA
+TestSchedule 20164902|Destination|CEE|F157|CEE
+TestSchedule 20164902|Destination|REU|F157|REU
+TestSchedule 20164902|Destination|SLV|F157|SLV
+TestSchedule 20164902|Destination|TKY|F157|TKY
+TestSchedule 20164902|Destination|UKR|F157|UKR
+TestSchedule 20164902|Destination|BNL|F157|BNL
+TestSchedule 20164902|Destination|NNE|F157|NNE
+TestSchedule 20164902|Destination|LEB|F157|LEB
+TestSchedule 20164902|Destination|EGP|F157|EGP
+TestSchedule 20164902|Destination|IBE|F157|IBE
+TestSchedule 20164902|Destination|CYP|F157|CYP
+TestSchedule 20164902|Destination|RUM|F157|RUM
+TestSchedule 20164902|Destination|GRE|F157|GRE
+TestSchedule 20164902|Destination|MLT|F157|MLT
+TestSchedule 20164902|Destination|IRL|F157|IRL
+TestSchedule 20164902|Destination|MOR|F157|MOR
+TestSchedule 20164902|Series|H151|H151|H151
+TestSchedule 20164902|Destination|USA|H151|USA
+TestSchedule 20164902|Destination|CHL|H151|CHL
+TestSchedule 20164902|Destination|ARB|H151|ARB
+TestSchedule 20164902|Destination|CAN|H151|CAN
+TestSchedule 20164902|Destination|PLT|H151|PLT
+TestSchedule 20164902|Destination|ASR|H151|ASR
+TestSchedule 20164902|Destination|DBY|H151|DBY
+TestSchedule 20164902|Destination|PRC|H151|PRC
+TestSchedule 20164902|Destination|JOR|H151|JOR
+TestSchedule 20164902|Series|J111|J111|J111
+TestSchedule 20164902|Destination|BNL|J111|BNL
+TestSchedule 20164902|Destination|IBE|J111|IBE
+TestSchedule 20164902|Destination|CEN|J111|CEN
+TestSchedule 20164902|Destination|CEE|J111|CEE
+TestSchedule 20164902|Destination|RUM|J111|RUM
+TestSchedule 20164902|Destination|NNE|J111|NNE
+TestSchedule 20164902|Destination|FRN|J111|FRN
+TestSchedule 20164902|Destination|EGB|J111|EGB
+TestSchedule 20164902|Destination|CHL|J111|CHL
+TestSchedule 20164902|Destination|GUT|J111|GUT
+TestSchedule 20164902|Destination|ASR|J111|ASR
+TestSchedule 20164902|Destination|NZE|J111|NZE
+TestSchedule 20164902|Destination|HKG|J111|HKG
+TestSchedule 20164902|Destination|SEN|J111|SEN
+TestSchedule 20164902|Destination|BOL|J111|BOL
+TestSchedule 20164902|Destination|DOM|J111|DOM
+TestSchedule 20164902|Destination|NIC|J111|NIC
+TestSchedule 20164902|Destination|GRE|J111|GRE
+TestSchedule 20164902|Destination|SLV|J111|SLV
+TestSchedule 20164902|Destination|UKR|J111|UKR
+TestSchedule 20164902|Destination|ITA|J111|ITA
+TestSchedule 20164902|Destination|REU|J111|REU
+TestSchedule 20164902|Destination|NCA|J111|NCA
+TestSchedule 20164902|Destination|ISR|J111|ISR
+TestSchedule 20164902|Destination|MOM|J111|MOM
+TestSchedule 20164902|Destination|EGP|J111|EGP
+TestSchedule 20164902|Destination|SAF|J111|SAF
+TestSchedule 20164902|Destination|MOR|J111|MOR
+TestSchedule 20164902|Destination|TUN|J111|TUN
+TestSchedule 20164902|Destination|ICE|J111|ICE
+TestSchedule 20164902|Destination|TKY|J111|TKY
+TestSchedule 20164902|Destination|CYP|J111|CYP
+TestSchedule 20164902|Series|ZE06|ZE06|ZE06
+TestSchedule 20164902|Destination|IBE|ZE06|IBE
+TestSchedule 20164902|Destination|FRN|ZE06|FRN
+TestSchedule 20164902|Destination|NNE|ZE06|NNE
+TestSchedule 20164902|Destination|CEN|ZE06|CEN
+TestSchedule 20164902|Destination|BNL|ZE06|BNL
+TestSchedule 20164902|Destination|EGB|ZE06|EGB
+TestSchedule 20164902|Destination|IRL|ZE06|IRL
+TestSchedule 20164902|TopCoat|01326|E121|01326
+TestSchedule 20164902|Surfacer|02MGY|E121|02MGY
+TestSchedule 20164902|TopCoat|01B/W|E121|01B/W
+TestSchedule 20164902|Surfacer|02B/W|E121|02B/W
+TestSchedule 20164902|TopCoat|01KAD|E121|01KAD
+TestSchedule 20164902|Surfacer|02DGY|E121|02DGY
+TestSchedule 20164902|TopCoat|01KY0|E121|01KY0
+TestSchedule 20164902|TopCoat|01NAJ|E121|01NAJ
+TestSchedule 20164902|TopCoat|01QAB|E121|01QAB
+TestSchedule 20164902|Surfacer|02WHT|E121|02WHT
+TestSchedule 20164902|TopCoat|01RBE|E121|01RBE
+TestSchedule 20164902|TopCoat|01RBN|E121|01RBN
+TestSchedule 20164902|TopCoat|01Z10|E121|01Z10
+TestSchedule 20164902|TopCoat|01Z11|E121|01Z11
+TestSchedule 20164902|TopCoat|01326|F157|01326
+TestSchedule 20164902|Surfacer|02MGY|F157|02MGY
+TestSchedule 20164902|TopCoat|01B/W|F157|01B/W
+TestSchedule 20164902|Surfacer|02B/W|F157|02B/W
+TestSchedule 20164902|TopCoat|01EAV|F157|01EAV
+TestSchedule 20164902|Surfacer|02WHT|F157|02WHT
+TestSchedule 20164902|TopCoat|01GAB|F157|01GAB
+TestSchedule 20164902|Surfacer|02DGY|F157|02DGY
+TestSchedule 20164902|TopCoat|01GAC|F157|01GAC
+TestSchedule 20164902|TopCoat|01KAD|F157|01KAD
+TestSchedule 20164902|TopCoat|01KY0|F157|01KY0
+TestSchedule 20164902|TopCoat|01NAJ|F157|01NAJ
+TestSchedule 20164902|TopCoat|01QAB|F157|01QAB
+TestSchedule 20164902|TopCoat|01RBN|F157|01RBN
+TestSchedule 20164902|TopCoat|01Z10|F157|01Z10
+TestSchedule 20164902|TopCoat|01Z11|F157|01Z11
+TestSchedule 20164902|TopCoat|01326|J111|01326
+TestSchedule 20164902|Surfacer|02MGY|J111|02MGY
+TestSchedule 20164902|TopCoat|01B/W|J111|01B/W
+TestSchedule 20164902|Surfacer|02B/W|J111|02B/W
+TestSchedule 20164902|TopCoat|01CAP|J111|01CAP
+TestSchedule 20164902|Surfacer|02DGY|J111|02DGY
+TestSchedule 20164902|TopCoat|01GAB|J111|01GAB
+TestSchedule 20164902|TopCoat|01KAD|J111|01KAD
+TestSchedule 20164902|TopCoat|01KY0|J111|01KY0
+TestSchedule 20164902|TopCoat|01NAJ|J111|01NAJ
+TestSchedule 20164902|TopCoat|01QAB|J111|01QAB
+TestSchedule 20164902|Surfacer|02WHT|J111|02WHT
+TestSchedule 20164902|TopCoat|01RBN|J111|01RBN
+TestSchedule 20164902|TopCoat|01Z10|J111|01Z10
+TestSchedule 20164902|TopCoat|01Z11|J111|01Z11
+TestSchedule 20164902|TopCoat|01326|ZE06|01326
+TestSchedule 20164902|Surfacer|02MGY|ZE06|02MGY
+TestSchedule 20164902|TopCoat|01B/W|ZE06|01B/W
+TestSchedule 20164902|Surfacer|02B/W|ZE06|02B/W
+TestSchedule 20164902|TopCoat|01CAP|ZE06|01CAP
+TestSchedule 20164902|Surfacer|02DGY|ZE06|02DGY
+TestSchedule 20164902|TopCoat|01KAD|ZE06|01KAD
+TestSchedule 20164902|TopCoat|01KY0|ZE06|01KY0
+TestSchedule 20164902|TopCoat|01NAJ|ZE06|01NAJ
+TestSchedule 20164902|TopCoat|01QAB|ZE06|01QAB
+TestSchedule 20164902|Surfacer|02WHT|ZE06|02WHT
+TestSchedule 20164902|TopCoat|01RBE|ZE06|01RBE
+TestSchedule 20164902|TopCoat|01Z10|ZE06|01Z10
+TestSchedule 20164902|TopCoat|01Z11|ZE06|01Z11
+TestSchedule 20164902|TopCoat|01CAN|H151|01CAN
+TestSchedule 20164902|Surfacer|02MGY|H151|02MGY
+TestSchedule 20164902|TopCoat|01GAC|H151|01GAC
+TestSchedule 20164902|Surfacer|02DGY|H151|02DGY
+TestSchedule 20164902|TopCoat|01KAD|H151|01KAD
+TestSchedule 20164902|TopCoat|01KH3|H151|01KH3
+TestSchedule 20164902|TopCoat|01KY0|H151|01KY0
+TestSchedule 20164902|TopCoat|01NAJ|H151|01NAJ
+TestSchedule 20164902|TopCoat|01NAX|H151|01NAX
+TestSchedule 20164902|TopCoat|01QAB|H151|01QAB
+TestSchedule 20164902|Surfacer|02WHT|H151|02WHT
+TestSchedule 20164902|TopCoat|01RBN|H151|01RBN
+TestSchedule 20164902|AWD|AWD|H151|X0001
+TestSchedule 20164902|QQ L2|QQ L2|J111|03933
+TestSchedule 20164902|QQ L2|QQ L2|J111|03746
+TestSchedule 20164902|1.2 Turbo|1.2 Turbo|J111|X0002
+TestSchedule 20164902|Destination|CHL|F157|CHL
+TestSchedule 20164902|Destination|QAT|H151|QAT
+TestSchedule 20164902|Destination|KUW|H151|KUW
+TestSchedule 20164902|Destination|ISP|H151|ISP
+TestSchedule 20164902|Destination|IEU|H151|IEU
+TestSchedule 20164902|Destination|BLG|J111|BLG
+TestSchedule 20164902|Destination|ELS|J111|ELS
+TestSchedule 20164902|Destination|STM|J111|STM
+TestSchedule 20164902|Destination|KNY|J111|KNY
+TestSchedule 20164902|Destination|MLW|J111|MLW
+TestSchedule 20164902|Destination|GDL|J111|GDL
+TestSchedule 20164902|Destination|MLT|J111|MLT
+TestSchedule 20164902|Destination|IRL|J111|IRL
+TestSchedule 20164902|Destination|ITA|ZE06|ITA
+TestSchedule 20164902|Destination|BOL|F157|BOL
+TestSchedule 20164902|Destination|DOM|H151|DOM
+TestSchedule 20164902|Destination|BRN|H151|BRN
+TestSchedule 20164902|Destination|PNM|H151|PNM
+TestSchedule 20164902|Destination|LEB|H151|LEB
+TestSchedule 20164902|Destination|TWN|H151|TWN
+TestSchedule 20164902|Destination|TUN|F157|TUN
+TestSchedule 20164902|Destination|GUM|H151|GUM
+TestSchedule 20164902|Destination|MEX|H151|MEX
+TestSchedule 20164902|Destination|PRG|J111|PRG
+TestSchedule 20164902|Destination|GHA|J111|GHA
+TestSchedule 20164902|Destination|HND|J111|HND
+TestSchedule 20164902|Destination|FGI|J111|FGI
+TestSchedule 20164902|Destination|CEE|ZE06|CEE
+TestSchedule 20164902|Destination|ICE|F157|ICE
+TestSchedule 20164902|Destination|COL|J111|COL
+TestSchedule 20164902|Destination|CST|J111|CST
+TestSchedule 20164902|Destination|SIN|J111|SIN
+TestSchedule 20164902|Destination|BEN|J111|BEN
+TestSchedule 20164902|Destination|ETH|J111|ETH
+TestSchedule 20164902|Destination|IVO|J111|IVO
+TestSchedule 20164902|Destination|ECA|J111|ECA
+TestSchedule 20164902|Destination|ANT|J111|ANT
+TestSchedule 20164902|Destination|GDL|F157|GDL
+TestSchedule 20164902|Destination|CUR|J111|CUR
+TestSchedule 20164902|Destination|DJI|J111|DJI
+TestSchedule 20164902|Destination|REU|ZE06|REU
+

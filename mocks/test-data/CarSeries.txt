@@ -1,0 +1,7 @@
+Table (Modified to be same format as Java endpoint)
+BBSSCarSeries
+
+ZE06|ZE06|#fff|#fff
+J111|J111|#fff|#fff
+E121|E121|#fff|#fff
+F157|F157|#fff|#fff

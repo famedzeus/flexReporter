@@ -1,0 +1,28 @@
+<!--<mat-progress-bar
+  *ngIf="hasPendingRequests"
+  color="accent"
+  mode="indeterminate"
+  style="z-index: 1000; position: fixed; top: 0;"></mat-progress-bar>-->
+<header *ngIf="auth.isAuthorised()">
+  <nav-bar
+    [navClass]="shouldMiniNav ? 'small' : 'standard'"
+    [sections]="appConfig.sections"
+    [logoUri]="appConfig.logoUri"
+    
+    [title]="'app_title'">
+    <!--<span class="language-dropdown" *ngIf="appConfig.language">
+      <img [src]="'assets/images/flags/4x3/' + appConfig.language.code + '.svg'" width="25"/>
+      {{ appConfig.plantName }}
+    </span>-->
+    <!--<task-management></task-management>-->
+    <!--<user-alert-notifications
+      [matTooltip]="'view_app_notifications' | translate "
+      (onAlertClick)="onAlertClick.emit()"></user-alert-notifications>
+    -->
+    <user-info [userDetails]="auth.getUserDetails()"></user-info>
+
+    <a [href]="logoutUrl" [matTooltip]="'Log Out' | translate">
+      <i class="fa fa-sign-out"></i>
+    </a>
+  </nav-bar>
+</header>

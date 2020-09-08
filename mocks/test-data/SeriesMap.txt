@@ -1,0 +1,3 @@
+Table
+Parameter
+{"textColor": "#FFFFFF","backgroundColor":"#d0d0d0"}|VSUI.SeriesMap.seriesMap.L1 P32S a Standard|ukx8867

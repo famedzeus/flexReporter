@@ -1,0 +1,23 @@
+@import "../../material-palette.scss";
+
+:host {
+  display: block;
+  color: #fff;
+
+  .success-alert {
+    color: #76ff76;
+  }
+
+  .info-alert {
+    color: #fff;
+  }
+
+  .error-alert {
+    color: mat-color($warning);
+  }
+
+  .info-toggle {
+    color: #222;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,38 @@
+<popover-modal
+  *ngIf="modeToggles && modeToggles.length > 0"
+  dialogId="mapEditorOptionToolsPanel"
+  position="absolute"
+  class="tools-dialog"
+  [canClose]="false"
+  [xPosition]="initialOptionsDialogCoords.x"
+  [yPosition]="initialOptionsDialogCoords.y"
+  [positionFromCenter]="false"
+  [displayContent]="true"
+  [title]="panelTitleLocale | translate"
+  [isDragable]="true"
+  (onClose)="hideEdit()">
+
+  <mat-button-toggle-group [value]="inputMode" (change)="setInputMode($event)">
+    <mat-button-toggle
+      *ngFor="let toggle of modeToggles"
+      [id]="toggle.id"
+      [value]="toggle.value"
+      [disabled]="toggle.disabled"
+      [matTooltip]="toggle.locale | translate">
+      <i [class]="toggle.iconClass"></i>
+    </mat-button-toggle>
+
+    <button mat-button (click)="addPoints($event)"
+      id="mapEditorOptionAdd"
+      *ngIf="mode === 'Edit'"
+      [matTooltip]="'line_map_add_zone_tooltip' | translate">
+      <i class="fa fa-plus"></i>
+    </button>
+  </mat-button-toggle-group>
+</popover-modal>
+
+<div class="map-container">
+  <svg #container
+    viewBox="0 0 950 500"
+    preserveAspectRatio="xMinYMin meet"></svg>
+</div>

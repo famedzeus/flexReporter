@@ -1,0 +1,37 @@
+@import "../../material-palette.scss";
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+:host {
+  display: block;
+
+  .mat-list-icon {
+
+    i.fa {
+      &.fa-check-circle {
+        color: #79b979
+      }
+
+      &.fa-exclamation-circle {
+        color: mat-color($warning);
+      }
+
+      &.fa-times-circle {
+        color: mat-color($accent);
+      }
+
+      &.fa-stop-circle {
+        animation: pulse 2s infinite;
+        color: mat-color($warning);
+      }
+
+      &.fa-users {
+        color: #fbb940;
+        animation: pulse 2s infinite;
+      }
+    }
+  }
+}

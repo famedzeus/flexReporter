@@ -1,0 +1,34 @@
+Table
+AttributeMember
+TestSchedule 20164902|ZE06|Series|ZE06
+TestSchedule 20164902|J111|Series|J111
+TestSchedule 20164902|E121|Series|E121
+TestSchedule 20164902|F157|Series|F157
+TestSchedule 20164902|Tx|Tx|Tx
+TestSchedule 20164902|P32S Diesel|P32S Diesel|P32S Diesel
+TestSchedule 20164902|R9M|R9M|R9M
+TestSchedule 20164902|4WD L1|4WD L1|4WD L1
+TestSchedule 20164902|Multilink4|Multilink4|Multilink4
+TestSchedule 20164902|RHD|Handle|RHD
+TestSchedule 20164902|PGF|PGF|PGF
+TestSchedule 20164902|4WD L2|4WD L2|4WD L2
+TestSchedule 20164902|H5FT CVT|H5FT CVT|H5FT CVT
+TestSchedule 20164902|MR16 DDT|MR16 DDT|MR16 DDT
+TestSchedule 20164902|Leather|Leather|Leather
+TestSchedule 20164902|Glass Roof|Glass Roof|Glass Roof
+TestSchedule 20164902|1.2 Turbo|1.2 Turbo|1.2 Turbo
+TestSchedule 20164902|Line 2 Diesel|Line 2 Diesel|Diesel
+TestSchedule 20164902|AVM|AVM|AVM
+TestSchedule 20164902|12SCTOT|SC Total|12SCTOT
+TestSchedule 20164902|Slide Seat|Sliding Seat|Slide Seat
+TestSchedule 20164902|Fixed Seat|Fixed Seat|Fixed Seat
+TestSchedule 20164902|Sports Pack|Sports Pack|Sports Pack
+TestSchedule 20164902|1.6 Turbo|1.6 Turbo|1.6 Turbo
+TestSchedule 20164902|NISMO|NISMO|NISMO
+TestSchedule 20164902|Hard Car|Hard Car|Hard Car
+TestSchedule 20164902|AWD|AWD|AWD
+TestSchedule 20164902|R9M CVT|R9M CVT|R9M CVT
+TestSchedule 20164902|QAB|TopCoat|01QAB
+TestSchedule 20164902|Surfacer|Surfacer|02WHT
+TestSchedule 20164902|QQ L2|QQ L2|QQ L2
+

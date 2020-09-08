@@ -1,0 +1,31 @@
+<!-- Zone details popup -->
+<div class="popover top fade in zoneDetails" data-ng-if="popoverCtrl.ngModel.popup" data-ng-style="popoverCtrl.ngModel.popupStyle"
+	data-ng-class="{'selected':popoverCtrl.selected}" 
+	data-ng-mousedown="popoverCtrl.dragging = true" 
+	data-ng-mousemove="popoverCtrl.drag($event)" 
+	data-ng-mouseup="popoverCtrl.dragging = false"
+	data-ng-click="popoverCtrl.selected = !popoverCtrl.selected">
+	<div class="arrow"></div>
+	<div class="popover-inner">
+    <h3 class="popover-title">
+		ZONE {{popoverCtrl.ngModel.name}}
+		<button style="margin:0;float:right;margin-bottom:10px;padding:2px;" class="btn btn-secondary" type="button" ng-click="popoverCtrl.ngModel.popup = false">x</button>		
+	</h3>
+	<aside>
+		<uib-accordion close-others="oneAtATime">
+			<div uib-accordion-group class="panel-default" heading="Slots" is-open="false" is-disabled="">		
+				<p>Time Slots</p>
+				<p>Time Slots</p>
+				<p>Time Slots</p>
+				<p>Time Slots</p>
+				<p>Time Slots</p>
+			</div>	
+			<div uib-accordion-group class="panel-default" heading="Rules" is-open="false" is-disabled="" />		
+			<div uib-accordion-group data-ng-if="popoverCtrl.ngModel.ELT" class="panel-default" heading="Extended Lead Time" is-open="false" is-disabled="" />		
+		</uib-accordion>
+		
+	</aside>
+	<aside>
+		
+	</aside>
+</div>

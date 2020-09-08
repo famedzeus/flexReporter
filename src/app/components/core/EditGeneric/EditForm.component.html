@@ -1,0 +1,41 @@
+<form [formGroup]="form" name="editForm" *ngIf="internalRecord">
+  <div>
+    <div *ngFor="let row of controlLayout" [hidden]="hideFields" class="flex">
+      <validatable-input
+        *ngFor="let field of row.fields"
+        [form]="form"
+        [class.has-error]="form.controls[field.fieldName].errors"
+        [field]="field"
+        [name]="field.fieldName"
+        [label]="field.displayName"
+        [type]="field.type"
+        [options]="field.options"
+        [description]="field.fieldHintLocale"
+        [autocomplete]="field.autocomplete"
+        [loading]="field.fetchingOptions"
+        [canEdit]="field.editable !== false || mode !== 'Edit'"
+        [model]="record[field.fieldName]"
+        (onInputChange)="setModel(field.fieldName, $event)"
+        [constraints]="field.constraints"></validatable-input>
+    </div>
+    <ng-content></ng-content>
+  </div>
+
+  <div>
+    <button type="button"
+      mat-button
+      *ngIf="!hideCancel"
+      (click)="onCancel.emit()">
+      {{cancelLabelCode | translate}}
+    </button>
+
+    <button class="btn btn-primary"
+      mat-raised-button
+      color="primary"
+      *ngIf="!hideSave"
+      [disabled]="saveDisabled || (form && !form.valid)" type="button"
+      (click)="submit()">
+      {{submitLabelCode | translate}}
+    </button>
+  </div>
+</form>

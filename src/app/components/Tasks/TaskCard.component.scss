@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  text-align: center;
+
+  progress-donut {
+    padding: 1rem 0;
+  }
+
+  .task-content {
+    padding-bottom: 2rem;
+  }
+
+  .mat-card-subtitle {
+    margin-bottom: 0;
+  }
+
+  .sub-subtitle {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,5 @@
+export const colourCode = 'colourCode'
+export const colourTypeCode = 'colourTypeCode'
+export const colourGroupCode = 'colourGroupCode'
+export const carSeries = 'carSeriesCode'
+export const colourPaintSeq = 'colourPaintSeq'

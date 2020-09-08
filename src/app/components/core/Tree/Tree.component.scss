@@ -1,0 +1,42 @@
+tree {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 31%;
+  overflow: hidden;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+    transition: 0.1s;
+    &:hover {
+      transition: 0.1s;
+      stroke: #ccc;
+      fill: steelblue!important;
+      transform: scale(1.25);
+    }
+  }
+
+  .node text {
+    font: 12px sans-serif;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.1s;
+      stroke-width: 4px;
+      stroke: #aaa;
+    }
+  }
+}

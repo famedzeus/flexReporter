@@ -1,0 +1,6 @@
+export const adoptShift = 'adoptShift'
+export const abolishShift = 'abolishShift'
+export const destinationCode = 'destinationCode'
+export const featureCode = 'featureCode'
+export const carSeriesCode = 'carSeriesCode'
+export const modelVariant = 'modelVariant'

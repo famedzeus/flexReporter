@@ -1,0 +1,66 @@
+@keyframes pulseInOut {
+  50% {
+    stroke-opacity: 0.5;
+  }
+}
+
+:host {
+  display: block;
+  position: relative;
+  .map-container {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    // padding-bottom: 52%;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    border-bottom: 1px dashed rgba(0,0,0,0.1)
+
+    svg {
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+
+  svg {
+
+    .link.hover {
+      // transition: stroke-width 0.3s;
+      stroke-width: 6px!important;
+      animation: pulseInOut 2s infinite;
+      cursor: pointer;
+    }
+
+    .linked-point {
+      font-weight: bold;
+    }
+  }
+
+  g {
+
+    &[input-mode="Move"] {
+      .node, .link {
+        &:hover {
+          cursor: move;
+        }
+      }
+    }
+
+    &[input-mode="Select"] {
+      .node {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .tools-dialog {
+      button.mat-button {
+      min-width: 49px;
+    }
+  }
+}

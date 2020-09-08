@@ -1,0 +1,6 @@
+export const id = 'id'
+export const calendarCode = 'calendarCode'
+export const shiftCode = 'shiftCode'
+export const startDateTime = 'startDateTime'
+export const weekCode = 'weekCode'
+export const endDateTime = 'endDateTime'

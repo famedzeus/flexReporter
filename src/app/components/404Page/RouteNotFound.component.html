@@ -1,0 +1,14 @@
+<section class="spacer-s">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        {{ configuration.titleLocale | translate }}
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="configuration.imgSrc" />
+    <mat-card-content>
+      {{ configuration.contentLocale | translate }}
+    </mat-card-content>
+
+  </mat-card>
+</section>

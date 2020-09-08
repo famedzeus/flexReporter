@@ -1,0 +1,35 @@
+expansion-filter-form {
+  display: block;
+
+  .mat-expansion-panel-header {
+    .mat-content {
+      align-items: center;
+
+      .fa-search {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  validatable-input > fieldset > div > *:not(date-shift-input) .mat-form-field-infix {
+    width: 200px;
+  }
+
+  .mat-chip-list, h6 {
+    display: inline-block;
+  }
+
+  h6 {
+    margin-right: 0.5rem;
+  }
+
+  .mat-chip-list {
+    .fa-times {
+      margin-left: 0.4rem;
+    }
+  }
+
+  .mat-action-row {
+    padding-bottom: 0;
+  }
+}

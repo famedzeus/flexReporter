@@ -1,0 +1,88 @@
+@mixin blue-gradient {
+	background: linear-gradient(#ffffff, rgba(190, 232, 255, 0.36));
+}
+
+@mixin ie($ver) {
+    html.ie#{$ver} {
+        @content;
+    }
+}
+
+@mixin menu-gradient {
+	background: -webkit-linear-gradient(#ffffff, rgba(190, 232, 255, 1));
+	background: -o-linear-gradient(#ffffff, rgba(190, 232, 255, 1));
+	background: -moz-linear-gradient(#ffffff, rgba(190, 232, 255, 1));
+	background: linear-gradient(#ffffff, rgba(190, 232, 255, 1));
+}
+
+// Animations
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+@keyframes wheel-spin {
+  0% { transform-origin:50% 50%; transform:rotate(0deg); }
+  10% { transform-origin:50% 50%; transform:rotate(20deg); }
+  20% { transform-origin:50% 50%; transform:rotate(40deg); }
+  30% { transform-origin:50% 50%; transform:rotate(60deg);}
+  40% { transform-origin:50% 50%; transform:rotate(80deg);}
+  50% { transform-origin:50% 50%; transform:rotate(100deg); }
+  60% { transform-origin:50% 50%; transform:rotate(120deg);}
+  70% { transform-origin:50% 50%; transform:rotate(140deg);}
+  80% { transform-origin:50% 50%; transform:rotate(160deg);}
+  90% { transform-origin:50% 50%; transform:rotate(180deg);}
+  100% { transform-origin:50% 50%; transform:rotate(200deg);}
+}
+
+@keyframes fa-spin-backwards {
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    0% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes show_fragment_animation {
+  from { opacity:0 }
+  to { opacity:1 }
+}
+@keyframes hide_fragment_animation {
+  from { opacity:1 }
+  to { opacity:0}
+}
+@keyframes roll_down_animation {
+  from { height:0px }
+  to { height:20px; }
+}
+@keyframes roll_up_animation {
+  from { height:20px; }
+  to { height:0px; }
+}
+@keyframes slide-open-zone {
+	from { background-color:#fff;}
+	to { background-color:#ddd;}
+}
+@keyframes slide-close-zone {
+	from { background-color:#ddd;}
+	to { background-color:#fff;}
+}
+
+@keyframes stretch {
+	from { width:0%;}
+	to { width:100%; }
+}
+
+@keyframes fa-training-tip {
+    0% { text-shadow:0px 0px 0px rgba(190, 232, 255, 1); color:rgba(190, 232, 255, 1); }
+    50% { text-shadow:0px 0px 0px #286090; color:#286090; }
+    100% { text-shadow:0px 0px 0px rgba(190, 232, 255, 1); color:rgba(190, 232, 255, 1); }
+}
+
+@keyframes fa-emphasis {
+    0% { background-color:rgba(190, 232, 255, 1); }
+    50% { background-color:#286090; }
+    100% { background-color:rgba(190, 232, 255, 1); }
+}

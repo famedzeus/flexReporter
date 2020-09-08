@@ -1,0 +1,16 @@
+:host {
+  display: block;
+
+  .mat-mini-fab {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      padding: 0px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../../material-palette.scss";
+@keyframes popIn {
+  0% {
+    transform: translate(0, -20px) scale(0, 0);
+    opacity: 0.5;
+  }
+
+  80% {
+    transform: translate(0, 3px) scale(1.1, 1.1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+:host {
+  display: block;
+  position: relative;
+  width:100%;
+  z-index:9999;
+
+  .fixed-alert {
+    position:fixed;
+    top: 30px;
+    opacity:1;
+    $width: 50%;
+    width: $width;
+    margin-left: (100% - $width) / 2;
+
+    .alert {
+      margin-bottom:10px;
+      text-align:left;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      z-index:0;
+      background-color:white;
+      animation: 0.3s popIn;
+    }
+
+    .alert-success, .alert-danger  {
+      font-weight:bold;
+    }
+
+  }
+
+  .mat-card {
+    &[color="warn"] {
+      .mat-list-item {
+        color: mat-color($warning);
+      }
+    }
+  }
+}

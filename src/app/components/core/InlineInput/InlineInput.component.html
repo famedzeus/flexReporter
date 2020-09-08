@@ -1,0 +1,40 @@
+<div [tabIndex]="tabIndex" *ngIf="!editing && editDisabled" (focus)="startEditing()" (click)="startEditing()">
+	{{ model}}
+	<span *ngIf="icon" [style.color]="icon.color" [class]="'cell-icon ' + icon.classes"></span>
+</div>
+
+<div class="input-container" *ngIf="!editDisabled" [class.editing]="editing" style="position: relative">
+
+	<input [tabindex]="tabIndex"
+		*ngIf="type !== 'colour-code' && type !== 'boolean'"
+    [class.changed]="changed"
+		[class]="'editingInline' + iconClass"
+    [type]="type"
+		[(ngModel)]="model"
+		(blur)="onBlurInput()"
+		(keydown)="checkKey($event)"/>
+
+	<input type="checkbox"
+		*ngIf="type === 'boolean'"
+		(change)="commitChange()"
+		[(ngModel)]="model"/>
+
+	<colour-input
+		*ngIf="type === 'colour-code'"
+		(onColourChange)="setChanged($event)"
+		[(colourCode)]="model"></colour-input>
+
+<!--	<colour-key
+		ng-if="$ctrl.type === 'colour-key'"
+		[(colour-code)]="$ctrl.model" /> -->
+
+	<!-- CONFIRM BUTTON -->
+	<div *ngIf="changed" type="button" class="eases btn btn-secondary" (click)="commitChange()">
+		<i class="fa fa-check-square" aria-hidden="true"></i>
+	</div>
+	<div *ngIf="edited && !changed"
+			type="button" class="eases btn">
+		<i title="Manually edited" class="fa fa-pencil" aria-hidden="true"></i>
+	</div>
+
+</div>

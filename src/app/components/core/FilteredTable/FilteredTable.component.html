@@ -1,0 +1,81 @@
+<!-- Generic view for filteredTable component -->
+
+<ng-content select="[pre-datatable]"></ng-content>
+
+<div *ngIf="!filterDisabled && filters">
+	<expansion-filter-form
+		*ngIf="filterFormExpansion === true"
+		[filters]="filters"
+		[filterTitle]="title"
+		[filterRelations]="filterRelations"
+		[resetEnabled]="filterResetEnabled"
+		[columns]="filterColumns"
+		[submitEnabled]="filterButton"
+		(onFilterChange)="updateFilters($event)"
+		(onFormAction)="onFilterFormAction($event)"></expansion-filter-form>
+
+	<filter-form-basic
+		*ngIf="filterFormExpansion === false"
+		[filters]="filters"
+		[filterTitle]="title"
+		[filterRelations]="filterRelations"
+		[columns]="filterColumns"
+		[resetEnabled]="filterResetEnabled"
+		[submitEnabled]="filterButton"
+		(onFilterChange)="updateFilters($event)"
+		(onFormAction)="onFilterFormAction($event)"></filter-form-basic>
+</div>
+<ng-content select="[post-filter]"></ng-content>
+<mat-card class="content-data-table" *ngIf="!externalTable">
+	<ng-content select="[header]"></ng-content>
+	<mat-card-header *ngIf="filterDisabled || !filters" class="table-card-header">
+		<mat-card-title>{{title | translate}}</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+		<div class="ag-theme-material">
+			<ag-grid-angular
+				[style.height]="tableHeight || '460px'"
+				groupHeaderHeight="34"
+				headerHeight="30"
+				[gridOptions]="gridOptions"
+				[columnDefs]="columnDefs"
+				[rowData]="dataset"
+				enableColResize
+				[enableSorting]="enableAgSorting"
+				rowHeight="26"
+				[suppressFieldDotNotation]="suppressFieldDotNotation"
+				[rowClassRules]="rowClassRules"
+				[suppressScrollOnNewData]="true"
+				[frameworkComponents]="frameworkComponents"
+				(cellValueChanged)="valueChanged($event)"
+				(cellFocused)="cellSelected($event)"
+				(selectionChanged)="rowSelectionChange($event)"
+				rowSelection="single">
+			</ag-grid-angular>
+		</div>
+
+		<div
+			class="footer-card spacer-s"
+			[style.display]="(totalItems > pagination.size) || options.create ? '' : 'none'">
+			<mat-paginator
+				*ngIf="totalItems > pagination.size"
+				[pageSizeOptions]="pageSizes"
+				[pageIndex]="pagination.page"
+				[length]="totalItems"
+				[pageSize]="pagination.size"
+				(page)="pageChange($event)"></mat-paginator>
+
+			<button
+				[hidden]="!options.create"
+				type="button"
+				(click)="selectAction('Create')"
+				[matTooltip]="'datatable_create_item' | translate"
+				color="primary"
+				mat-mini-fab>
+				<i class="fa fa-plus"></i>
+			</button>
+		</div>
+
+	</mat-card-content>
+	<ng-content></ng-content>
+</mat-card>

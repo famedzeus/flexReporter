@@ -1,0 +1,75 @@
+Table
+RuleAttributeSet
+TestSchedule 20164902|1|ZE06|SP|||ZE06|
+TestSchedule 20164902|2|Tx|SP|||ANY|
+TestSchedule 20164902|3|P32S Diesel|SP|||ANY|
+TestSchedule 20164902|4|R9M|SP|||ANY|
+TestSchedule 20164902|5|R9M|SP|||ANY|
+TestSchedule 20164902|6|4WD L1|SP|||ANY|
+TestSchedule 20164902|7|4WD L1|SP|||ANY|
+TestSchedule 20164902|8|Multilink4|SP|||ANY|
+TestSchedule 20164902|9|RHD|SP|||ANY|
+TestSchedule 20164902|10|PGF|SP|||ANY|
+TestSchedule 20164902|14|H5FT CVT|SP|||ANY|
+TestSchedule 20164902|15|MR16 DDT|SP|||ANY|
+TestSchedule 20164902|16|R9M|BP|||ANY|
+TestSchedule 20164902|16|MR16 DDT|RP|||ANY|!
+TestSchedule 20164902|17|MR16 DDT|BP|||ANY|
+TestSchedule 20164902|17|R9M|RP|||ANY|!
+TestSchedule 20164902|18|Leather|SP|||ANY|
+TestSchedule 20164902|22|1.2 Turbo|SP|||ANY|
+TestSchedule 20164902|23|Tx|SP|||ANY|
+TestSchedule 20164902|24|RHD|SP|||ANY|
+TestSchedule 20164902|26|4WD L2|BP|||P12C|
+TestSchedule 20164902|26|Line 2 Diesel|RP|||P12C|!
+TestSchedule 20164902|27|Line 2 Diesel|BP|||P12C|
+TestSchedule 20164902|27|4WD L2|RP|||P12C|!
+TestSchedule 20164902|30|1.6 Turbo|SP|||ANY|
+TestSchedule 20164902|31|NISMO|SP|||ANY|
+TestSchedule 20164902|32|Hard Car|SP|||ANY|
+TestSchedule 20164902|34|Glass Roof|SP|||ANY|
+TestSchedule 20164902|35|PGF|SP|||ANY|
+TestSchedule 20164902|37|AVM|SP|||ANY|
+TestSchedule 20164902|38|12SCTOT|SP|||ANY|
+TestSchedule 20164902|39|Slide Seat|SP|||ANY|
+TestSchedule 20164902|40|Fixed Seat|SP|||ANY|
+TestSchedule 20164902|41|Sports Pack|SP|||ANY|
+TestSchedule 20164902|42|AWD|SP|||ANY|
+TestSchedule 20164902|43|AWD|SP|||ANY|
+TestSchedule 20164902|46|J111|SP|||ANY|
+TestSchedule 20164902|47|ZE06|SP|||ANY|
+TestSchedule 20164902|48|J111|SP|||ANY|
+TestSchedule 20164902|49|ZE06|SP|||ANY|
+TestSchedule 20164902|50|F157|SP|||ANY|
+TestSchedule 20164902|52|F157|SP|||ANY|
+TestSchedule 20164902|54|J111|SP|||ANY|
+TestSchedule 20164902|55|ZE06|SP|||ANY|
+TestSchedule 20164902|56|F157|SP|||ANY|
+TestSchedule 20164902|58|R9M CVT|SP|||ANY|
+TestSchedule 20164902|59|P32S Diesel|BP|||ANY|!
+TestSchedule 20164902|59|P32S Diesel|RP|||ANY|
+TestSchedule 20164902|60|QAB|SP|||ANY|
+TestSchedule 20164902|61|QAB|SP|||ANY|
+TestSchedule 20164902|62|QAB|SP|||ANY|
+TestSchedule 20164902|63|Surfacer|SP|||ANY|
+TestSchedule 20164902|33|Glass Roof|SP|||ANY|
+TestSchedule 20164902|11|Glass Roof|SP|||ANY|
+TestSchedule 20164902|64|QQ L2|SP|||J111|!
+TestSchedule 20164902|20|Glass Roof|SP|||F157|
+TestSchedule 20164902|25|4WD L2|SP|||ANY|
+TestSchedule 20164902|36|Leather|SP|||ANY|
+TestSchedule 20164902|45|AWD|BP|||ANY|
+TestSchedule 20164902|45|4WD L2|RP|||ANY|!
+TestSchedule 20164902|44|4WD L2|BP|||ANY|
+TestSchedule 20164902|44|AWD|RP|||ANY|!
+TestSchedule 20164902|28|4WD L2|BP|||ANY|
+TestSchedule 20164902|28|Tx|RP|||P12C|!
+TestSchedule 20164902|29|Tx|BP|||ANY|
+TestSchedule 20164902|29|4WD L2|RP|||P12C|!
+TestSchedule 20164902|65|QAB|BP|||ANY|
+TestSchedule 20164902|65|QAB|RP||||!
+TestSchedule 20164902|12|4WD L1|BP|||ANY|
+TestSchedule 20164902|12|Tx|RP|||ANY|!
+TestSchedule 20164902|13|Tx|BP|||ANY|
+TestSchedule 20164902|13|4WD L1|RP|||ANY|!
+

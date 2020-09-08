@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "es5",
+    "allowJs": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "pretty": true,
+    "stripInternal": true,
+    // "noEmitHelpers": true,
+    "importHelpers": true,
+    "outDir": "./mocks/compiled",
+    "lib": ["es2015", "es2017", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "app-config": ["src/app/config/config.dev.ts"],
+      "entities": ["src/app/entities"],
+      "effects": ["src/app/store/effects"],
+      "services": ["src/app/services"],
+      "reducers": ["src/app/store/reducers"]
+    },
+    "types": [
+      "jasmine",
+      "sinon",
+      "chart.js",
+      "lodash"
+    ]
+  },
+  "emitError": true,
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules/**/*.js",
+    "lib.d.ts",
+    "node_modules/ngx-uploader/src/**/*.spec.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "version": "2.4.0"
+}

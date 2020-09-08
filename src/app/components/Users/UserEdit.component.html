@@ -1,0 +1,82 @@
+
+<h3 *ngIf="!customTitles[mode] && (mode == 'Edit' || mode == 'Create')" mat-dialog-title>
+{{ ('title_' + mode) | translate : (title | translate) }}
+</h3>
+
+<h3 *ngIf="customTitles[mode]" mat-dialog-title>
+{{ customTitles[mode] | translate }}
+</h3>
+
+<c-alerts [emitter]="alertEmitter"></c-alerts>
+
+<!-- CREATE AND EDIT -->
+<dialog-edit-form
+  #form
+  *ngIf="mode !== 'Delete'"
+  [record]="record"
+  [fieldLayout]="fieldLayout"
+  [fields]="fields"
+  [mode]="mode"
+  [hideFields]="hideFields"
+  (onAction)="commitAction($event)"
+  [formSetters]="formSetters"
+  (onCancel)="cancel()">
+  <!-- Additional form fields -->
+
+  <fieldset *ngIf="controlsAdded && mode === 'Create' && hideFields" [formGroup]="form.form">
+    <h4><i class="fa fa-search"></i> {{'find_user' | translate}}</h4>
+    <mat-radio-group [(ngModel)]="searchMethod" [ngModelOptions]="{standalone: true}" (ngModelChange)="clearSearchField()">
+      <mat-radio-button value="lastName">
+        {{ 'lastName' | translate }}
+      </mat-radio-button>
+      <mat-radio-button value="userId">
+        {{ 'userId' | translate }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <div>
+      <mat-form-field>
+        <input [placeholder]="searchMethod | translate" matInput [matAutocomplete]="auto" name="surnameLookup" [formControlName]="'surnameLookup'" />
+
+        <mat-autocomplete #auto="matAutocomplete" style="z-index: 10000000">
+          <mat-option (onSelectionChange)="selectUser(option)" *ngFor="let option of options" [value]="option[searchMethod]">
+            {{option.displayName}} ({{option.userId}})
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+  </fieldset>
+
+  <section *ngIf="!hideFields">
+    <div>
+      <h4>{{'groups' | translate}}:</h4>
+      <mat-chip-list>
+        <mat-chip *ngFor="let userGroup of currentUserGroups" [class.disabled]="!userGroup.editable">
+          {{userGroup.displayName | translate}}
+          <a (click)="removeGroup(userGroup)" *ngIf="userGroup.editable">
+            <i class="fa fa-times"></i>
+          </a>
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div *ngIf="permittedUserGroups.length > 0">
+      <mat-form-field>
+        <mat-select
+          [disabled]="permittedUserGroups.length === 0"
+          [ngModelOptions]="{standalone: true}"
+          [(ngModel)]="selectedGroupName"
+          [placeholder]="'add_user_group' | translate">
+          <mat-option
+            *ngFor="let group of permittedUserGroups" [value]="group.groupName">
+            {{group.displayName | translate}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-mini-fab color="primary"
+        [disabled]="!selectedGroupName"
+        (click)="addGroup(selectedGroupName)">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+
+  </section>
+</dialog-edit-form>

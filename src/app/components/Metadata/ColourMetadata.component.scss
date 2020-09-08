@@ -1,0 +1,40 @@
+colour-metadata {
+  display: block;
+  position: relative;
+  min-width: 150px;
+
+  .btn {
+    width: 100%;
+  }
+
+  div.form-control {
+    display: none;
+  }
+
+  colour-input {
+    max-width: 260px;
+    .colour-input input.form-control {
+      width: 100%!important;
+      color: transparent;
+    }
+  }
+
+  validatable-input {
+    margin-right: 0!important;
+  }
+
+  .modal-footer {
+    clear: both;
+  }
+
+  .modal-body,
+  .modal-header,
+  .modal-footer {
+    padding: 10px;
+  }
+}
+
+.colour-demo {
+  padding: 10px;
+  border: 2px dashed rgba(0,0,0,0.15);
+}

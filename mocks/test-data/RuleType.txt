@@ -1,0 +1,10 @@
+Table
+RuleType
+BR|Batch & Recovery
+P|Pattern
+R|Routing
+S|Smoothing
+FB|Feature Batching
+PF|Parallel Feature
+PV|Period Volume
+

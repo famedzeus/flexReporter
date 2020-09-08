@@ -1,0 +1,29 @@
+:host {
+  display: inline-block;
+  .toggle-icon-animated.mat-mini-fab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      transition: 0.3s;
+    }
+
+    .mat-button-wrapper {
+      line-height: normal;
+      display: flex;
+    }
+
+    &.opened {
+      i {
+        transition: 0.3s;
+        transform: rotate(-90deg);
+        padding-bottom: 2px;
+
+        &:before {
+          content: '\F062'!important;
+        }
+      }
+    }
+  }
+}

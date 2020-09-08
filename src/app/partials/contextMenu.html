@@ -1,0 +1,20 @@
+<div class="customPopover" data-ng-if="popoverCtrl.popupOpen" class="volumesPopup panel-default panel ng-scope" data-ng-style="popoverCtrl.popupStyle"
+							ng-mouseleave="popoverCtrl.closePopup()">
+	<ul>
+		<li data-ng-class="{'menu-divider':item.name == '-line-','hover':popoverCtrl.selection == $index}"
+			ng-attr-class="{{item.class}}"
+			data-ng-repeat="item in popoverCtrl.menuList | orderBy:item" 
+			data-ng-mousemove="popoverCtrl.selection=$index" 
+			data-ng-click="popoverCtrl.itemSelected($index)">
+			<span data-ng-if="item.name != '-line-'">
+				<span data-ng-if="item.icon" ng-attr-class="fa {{item.icon}}"></span>&nbsp;
+				{{item.name}}
+			</span>
+			<c-training-tip style="float:right" data-ng-if="item.help" 
+							enabled="popoverCtrl.$rootScope.trainingTipsEnabled" 
+							tip-html="'{{ item.help | translate}}'" 
+							placement="bottom-left" 
+							icon-class="fa fa-question-circle"></c-training-tip>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,66 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+:host {
+  position: relative;
+  display: block;
+
+  .tasks-management-container {
+    display: block;
+    max-width: 800px;
+    min-width: 400px;
+  }
+
+  a {
+    position: relative;
+    color: white;
+
+    .fa-cog {
+      opacity: 0;
+      position: absolute;
+      color: #424242;
+      left: -7px;
+      top: 8px;
+      font-size: 17px;
+    }
+
+    &.tasks-active {
+      .fa-cog {
+        opacity: 1;
+        animation: rotate 3s infinite linear;
+      }
+
+      .fa-tasks {
+        animation: pulse 2s infinite;
+      }
+    }
+  }
+
+  .button-pointer {
+    position: absolute;
+    width:15px;
+    height: 15px;
+    transform: rotate(45deg);
+    right: 15px;
+    top: -5px;
+    background: white;
+  }
+
+  .task-completion-alert {
+    position: absolute;
+    right: -14px;
+    bottom: -84px;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+}

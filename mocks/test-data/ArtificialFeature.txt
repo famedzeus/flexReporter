@@ -1,0 +1,5 @@
+Table
+ArtificialFeature
+H151|---N--------------|X0001|H151 AWD|ANY
+J111|-RL---------------|X0002|QQ H5FT (1.2 TURBO)|ANY
+

@@ -1,0 +1,6 @@
+Table
+BBSSColourType
+01|TopCoat
+02|Surfacer
+03|Second Colour
+

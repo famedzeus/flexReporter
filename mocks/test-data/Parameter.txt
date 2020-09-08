@@ -1,0 +1,30 @@
+Table
+Parameter
+{"textColor": "#FFFFFF","backgroundColor":"#113656"}|VSUI.CarSeries.carSeries.J111|ukx8867}
+{"textColor": "#000000","backgroundColor":"#e8b614"}|VSUI.CarSeries.carSeries.H151|ukx8867}
+{"textColor": "#FFFFFF","backgroundColor":"#327b24"}|VSUI.CarSeries.carSeries.ZE06|ukx8867}
+{"textColor": "#000000","backgroundColor":"#aaaa00"}|VSUI.CarSeries.carSeries.F157|ukx8867}
+{"textColor": "#FFFFFF","backgroundColor":"#FF0000"}|VSUI.CarSeries.carSeries.E121|ukx8867}
+{"textColor": "#FFFFFF","backgroundColor":"#d0d0d0"}|VSUI.SeriesMap.seriesMap.L1 P32S a Standard|ukx8867}
+{"textColor": "#000000","backgroundColor":"#ff0000"}|VSUI.SeriesMap.seriesMap.L1 P32S b EXLT|ukx8867}
+{"textColor": "#ffffff","backgroundColor":"#00ff00"}|VSUI.SeriesMap.seriesMap.L1 Leaf b EXLT|ukx8867}
+{"textColor": "#000000","backgroundColor":"#e46410"}|VSUI.SeriesMap.seriesMap.L2 H151 a Standard|ukx8867}
+{"textColor": "#FFFFFF","backgroundColor":"#660000"}|VSUI.SeriesMap.seriesMap.L2 Note d Std (as LIVE)|ukx8867}
+
+
+
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.CarSeries.carSeriesCode.J111', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#113656"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.CarSeries.carSeriesCode.H151', 'default', 'ukx8717', '{"textColour": "#000000","backgroundColour":"#e8b614"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.CarSeries.carSeriesCode.ZE06', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#327b24"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.CarSeries.carSeriesCode.F157', 'default', 'ukx8717', '{"textColour": "#000000","backgroundColour":"#aaaa00"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.CarSeries.carSeriesCode.E121', 'default', 'ukx8717', '{"textColour": "#000000","backgroundColour":"#d0d0d0"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L1 P32S a Standard', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#d0d0d0"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L1 Leaf a Standard', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#00dd00"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L1 P32S b EXLT', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#ff0000"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L1 Leaf b EXLT', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#00ff00"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L2 H151 a Standard', 'default', 'ukx8717', '{"textColour": "#000000","backgroundColour":"#e46410"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L2 Note d Std (as LIVE)', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#660000"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L2 H151 b F2 ELT', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#660000"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L2 Juke b ML F2 ELT', 'default', 'ukx8717', '{"textColour": "#FFFFFF","backgroundColour":"#ffaa00"}');
+INSERT INTO PARAMETER ( PARAMETER, PARAMETER_TYPE,OWNER,VALUE) VALUES ('VSUI.SeriesMap.seriesMapName.L2 H151 c C6 ELT', 'default', 'ukx8717', '{"textColour": "#000000","backgroundColour":"#ffaaaa"}');
+

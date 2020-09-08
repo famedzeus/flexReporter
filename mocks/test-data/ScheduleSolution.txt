@@ -1,0 +1,8 @@
+Table
+ScheduleSolution
+Base Solution|Scope
+Default1|Scope
+Default2|Scope
+Default3|Scope
+Default4|Scope
+Default5|Scope

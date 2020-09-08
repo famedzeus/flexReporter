@@ -1,0 +1,87 @@
+$scaleHeight: 4px;
+vs-slider {
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+
+  > div {
+    display: block;
+    position: relative;
+    min-height: 70px;
+    width: 100%;
+  }
+
+  * {
+    position: absolute;
+    bottom: 0;
+  }
+
+  slider-handle {
+    height: 10px;
+    width: 10px;
+    margin-left: -5px;
+    bottom: 0;
+    background: black;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    cursor: move;
+  }
+
+  slider-scale {
+    width: 100%;
+    height: $scaleHeight;
+    background: rgba(0,0,0,0.2);
+    left: 0;
+
+    > span {
+      bottom: -22px;
+      font-size: 1.3rem;
+      font-weight: bold;
+
+      &:last-child {
+        right: 0;
+      }
+    }
+  }
+
+  slider-range {
+    height: $scaleHeight;
+    background: #80b0ff;
+    z-index: 1;
+  }
+
+  slider-label {
+    bottom: auto;
+    top: -22px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 12px;
+    padding: 3px 10px;
+    white-space: nowrap;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
+
+    &:hover, &:active {
+      box-shadow: 0 0 3px 1px rgba(0,0,0,0.9);
+    }
+  }
+
+  slider-fine-adjust {
+    display: block;
+    bottom: -20px;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.7);
+    cursor: default;
+
+    * {
+      position: relative
+    }
+
+    a {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div data-ng-if="popoverCtrl.popupOpen" class="customPopover" data-ng-style="popoverCtrl.popupStyle"
+							ng-attr-style="popover.popupStyle" ng-mouseleave="popoverCtrl.closePopup()">
+	<ul>
+		<li><b>{{::popoverCtrl.objects.slot.zoneCode}}&nbsp;{{::popoverCtrl.objects.slot.zoneType}}</b></li>
+		<li ng-attr-class="status-menu {{popoverCtrl.objects.slot.status}}"><b>{{::popoverCtrl.objects.slot.status}}</b></li>
+		<li>Entry:{{::popoverCtrl.objects.slot.entryTime | date:'dd-MM-yyyy HH:mm:ss'}}</li>
+		<li>Exit:{{::popoverCtrl.objects.slot.exitTime | date:'dd-MM-yyyy HH:mm:ss'}}</li>
+		<li>TAKT:{{::popoverCtrl.objects.slot.taktTime}}</li>
+		<li>WIP:{{::popoverCtrl.objects.slot.wip}}</li>
+	</ul>
+	<div data-ng-if="popoverCtrl.objects.slot.taktInvalid" class="error-text"><span class="fa fa-clock-o"></span>&nbsp;TAKT is {{popoverCtrl.objects.slot.adjustedTakt/1000}}s</div>
+</div>

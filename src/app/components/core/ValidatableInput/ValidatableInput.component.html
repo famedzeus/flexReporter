@@ -1,0 +1,143 @@
+    <!-- Selective markup for all validatable input types -->
+
+<fieldset [formGroup]="form">
+  <div>
+    <!-- Label for field -->
+    <!--<label class="control-label"
+      [attr.for]="name">{{label | translate}}</label>-->
+    <mat-form-field *ngIf="!options && (type === 'string' || type === 'number' || !type) && (!constraints || !constraints.length || !constraints.length.maximum || constraints.length.maximum < 30)">
+    <!-- Number or text -->
+      <input
+        matInput
+        #textInput
+        [formControlName]="name"
+        [type]="type === 'number' ? 'number' : 'text'"
+        [id]="name"
+        [name]="name"
+        [placeholder]="label | translate" />
+      <mat-hint *ngIf="hintLocale">{{hintLocale | translate}}</mat-hint>
+      <mat-hint
+          align="end"
+          *ngIf="!disableLengthHint && !textInput.disabled && constraints && constraints.length">
+          {{textInput.value.length}} / {{constraints.length.maximum}}
+      </mat-hint>
+      <mat-error>
+        <div *ngIf="control.touched && control.errors && control.errors.constraints">
+          <span *ngFor="let error of control.errors.constraints">
+            {{error | translate : (label | translate)}}
+          </span>
+        </div>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="!options && (type === 'string' || type === 'number' || !type) && constraints && constraints.length && constraints.length.maximum && constraints.length.maximum > 29">
+      <!-- Number or text -->
+      <textarea
+        matInput
+        #textInput
+        matTextareaAutosize
+        matAutosizeMinRows="1"
+        matAutosizeMaxRows="5"
+        [formControlName]="name"
+        [type]="type === 'number' ? 'number' : 'text'"
+        [id]="name"
+        [name]="name"
+        [placeholder]="label | translate"></textarea>
+      <mat-hint *ngIf="hintLocale">{{hintLocale | translate}}</mat-hint>
+      <mat-hint
+          align="end"
+          *ngIf="!disableLengthHint && !textInput.disabled && constraints && constraints.length">
+          {{textInput.value.length}} / {{constraints.length.maximum}}
+      </mat-hint>
+      <mat-error>
+        <div *ngIf="control.touched && control.errors && control.errors.constraints">
+          <span *ngFor="let error of control.errors.constraints">
+            {{error | translate : (label | translate)}}
+          </span>
+        </div>
+      </mat-error>
+    </mat-form-field>
+
+
+    <!-- Checkbox -->
+    <mat-checkbox
+      *ngIf="type === 'boolean' && (!options || !options.length)"
+      [indeterminate]="indeterminate"
+      (click)="setNextCheckboxValue()"
+      [formControlName]="name">
+      {{label | translate}}
+    </mat-checkbox>
+
+    <c-mask-input
+      *ngIf="type === 'mask'"
+      [form]="form"
+      [model]="model"
+      (onChange)="updateModel($event)"></c-mask-input>
+    <!-- Dropdown -->
+    <div *ngIf="options || loading">
+      <mat-form-field>
+        <mat-select
+          [value]="field.defaultOption ? field.defaultOption.value : ''"
+          [formControlName]="name"
+          [placeholder]="options.length ? (label | translate) : ('no_options_found' | translate : (label | translate))"
+          *ngIf="options">
+          <!--<option *ngIf="!defaultOptionDisabled" [value]="''">{{'Select' | translate}}</option>-->
+          <mat-option
+              *ngFor="let option of options"
+              [style.background]="option.extraInformation ? option.extraInformation.backgroundColour : 'initial'"
+              [style.color]="option.extraInformation ? option.extraInformation.textColour : 'initial'"
+              [value]="option.value">
+              {{option.description | translate}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div *ngIf="loading" class="options-loading">
+        <mat-spinner mode="indeterminate"></mat-spinner>
+        <span>{{ 'fetching_options' | translate : (label | translate) }}</span>
+      </div>
+    </div>
+
+    <!-- Colour input -->
+    <colour-input
+      *ngIf="type === 'colour-code'"
+      (onColourChange)="updateModel($event)"
+      [name]="name"
+      [colourCode]="initialModel"></colour-input>
+
+    <!-- DateShift field format YYYYMMDDSS -->
+    <date-shift-input
+      *ngIf="type === 'date-shift'"
+      [form]="form"
+      [dateShift]="initialModel"
+      [name]="name"
+      [label]="label"
+      [placeholder]="'select_date' | translate"
+      [inputDisabled]="!canEdit"
+      [constraints]="constraints"
+      [(model)]="model"></date-shift-input>
+
+    <!-- Date input -->
+    <date-input
+      *ngIf="(constraints && constraints.datetime) || type === 'date'"
+      [placeholder]="'select_date' | translate"
+      [(model)]="model"
+      [inputDisabled]="!canEdit"
+      [constraints]="constraints"
+      [form]="form"
+      [name]="name"
+      [label]="label"></date-input>
+
+    <p *ngIf="options && control.touched && control.errors && control.errors.constraints" class="feedback">
+      <span *ngFor="let error of control.errors.constraints">
+        {{error | translate : (label | translate)}}
+      </span>
+    </p>
+
+    <i class="fa fa-info field-info"
+      *ngIf="description"
+      [matTooltip]="description | translate"
+      matTooltipPosition="above"></i>
+
+  </div>
+</fieldset>

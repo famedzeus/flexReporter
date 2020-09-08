@@ -1,0 +1,10 @@
+:host {
+  validatable-input {
+    margin-right: 2rem;
+  }
+  .flex-cols-4, .flex-cols-3, .flex-cols-2 {
+    > div {
+      padding: 0 1rem;
+    }
+  }
+}

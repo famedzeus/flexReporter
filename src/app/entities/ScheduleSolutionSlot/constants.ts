@@ -1,0 +1,5 @@
+export const scheduleSolutionName = 'scheduleSolutionName'
+export const scheduleScopeName = 'scheduleScopeName'
+export const schedulePeriod = 'schedulePeriod'
+export const routeNumber = 'routeNumber'
+export const slotId = 'slotId'

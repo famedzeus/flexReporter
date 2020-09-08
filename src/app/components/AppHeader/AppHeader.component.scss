@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  position: relative;
+
+  task-management, user-alert-notifications, user-info, user-info + a {
+      padding-left: 2rem;
+  }
+
+  user-info + a {
+    color: white;
+  }
+  .language-dropdown {
+    font-size: 1.7rem;
+  }
+}

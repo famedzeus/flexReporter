@@ -1,0 +1,5 @@
+Table
+PenaltyFunction
+Constant| |
+Linear| |
+Exponential | |

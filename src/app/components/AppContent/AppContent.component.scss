@@ -1,0 +1,32 @@
+@import '../app/app.constants.scss';
+:host {
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  position: relative;
+  // TODO: Use variables (-(app footer height) -(app header height)
+  min-height: $contentMinHeight;
+
+  > * {
+    // flex: 1;
+    min-height: $contentMinHeight;
+  }
+
+  > .mat-sidenav-container > .mat-sidenav {
+    @media (min-width: 600px) {
+      width: 600px;
+    }
+
+    task {
+      .mat-list-text {
+        > *:first-child {
+          white-space: normal;
+        }
+      }
+    }
+
+    user-alerts {
+      max-width: none;
+    }
+  }
+}

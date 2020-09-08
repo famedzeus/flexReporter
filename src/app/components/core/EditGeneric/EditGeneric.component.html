@@ -1,0 +1,25 @@
+
+<h3 *ngIf="!customTitles[mode] && (mode == 'Edit' || mode == 'Create')" mat-dialog-title>
+  {{ ('title_' + mode) | translate : (title | translate) }}
+</h3>
+
+<h3 *ngIf="customTitles[mode]" mat-dialog-title>
+  {{ customTitles[mode] | translate }}
+</h3>
+
+<c-alerts [emitter]="alertEmitter"></c-alerts>
+
+<!-- CREATE AND EDIT -->
+<dialog-edit-form
+  #form
+  *ngIf="mode !== 'Delete'"
+  [record]="record"
+  [fieldLayout]="fieldLayout"
+  [fields]="fields"
+  [mode]="mode"
+  [hideFields]="hideFields"
+  (onAction)="commitAction($event)"
+  [formSetters]="formSetters"
+  (onCancel)="cancel()">
+  <!-- Additional form fields -->
+</dialog-edit-form>

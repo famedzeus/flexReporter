@@ -1,0 +1,8 @@
+<mat-card color="warn" *ngIf="alerts.length > 0">
+  <mat-list>
+    <mat-list-item *ngFor="let alert of alerts">
+      <i mat-list-icon class="fa fa-exclamation-triangle"></i>
+      {{alert.message | translate}}
+    </mat-list-item>
+  </mat-list>
+</mat-card>

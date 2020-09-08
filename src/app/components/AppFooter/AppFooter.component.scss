@@ -1,0 +1,25 @@
+@import "../../material-palette.scss";
+@import "../app/app.constants.scss";
+
+:host {
+  display: flex;
+  clear: both;
+  min-height: $footerHeight;
+  background: mat-color($primary, 900);
+  color: mat-color($accent, 300);
+  box-shadow: inset 0px 1px 1px 1px rgba(0,0,0,0.3);
+
+  footer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: $footerHeight;
+    flex-direction: column;
+
+    span:last-child {
+      font-size: 1rem;
+      padding-left: 0.5rem;
+    }
+  }
+}

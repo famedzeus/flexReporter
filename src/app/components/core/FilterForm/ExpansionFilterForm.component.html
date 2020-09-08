@@ -1,0 +1,96 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <i class="fa fa-search"></i> {{ 'Filter' | translate }} {{filterTitle | translate}}
+  </mat-expansion-panel-header>
+
+  <form [name]="'filterForm'" [formGroup]="form">
+      <div *ngFor="let filter of filterFields" style="display: inline-block; margin-right: 2rem;">
+        <validatable-input
+          *ngIf="!filter.values"
+          [allowIndeterminate]="true"
+          [id]="'filterField-' + filter.key"
+          [class.has-error]="form && !form.controls[filter.key].valid"
+          [form]="form"
+          [field]="filter"
+          [name]="filter.key"
+          [label]="filter.displayName"
+          [type]="filter.fieldType"
+          [options]="filter.options"
+          canEdit="true"
+          [(model)]="filter.value"
+          disableLengthHint="true"
+          [constraints]="filter.constraints"></validatable-input>
+
+        <div *ngIf="filter.values">
+          <mat-form-field>
+            <input matInput
+              [disabled]="!filter.options || filter.options.length === 0"
+              [placeholder]="filter.displayName | translate"
+              [(ngModel)]="filter.localValue"
+              (optionSelected)="addToFilterValues(filter.name, filter.localValue)"
+              [ngModelOptions]="{standalone: true}"
+              [matAutocomplete]="auto" />
+
+              <mat-autocomplete #auto>
+                <mat-option
+                  *ngFor="let option of filterOptions(filter.localValue, filter.options)"
+                  [value]="option.value">{{option.description | translate}}</mat-option>
+              </mat-autocomplete>
+
+          </mat-form-field>
+          <button
+            [disabled]="filter.localValue === ''"
+            (click)="addToFilterValues(filter.name, filter.localValue)"
+            mat-mini-fab>
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+
+    </div>
+
+    <div>
+      <div *ngFor="let filter of filterList">
+        <h6>{{ filter.displayName | translate }}</h6>
+        <mat-form-field *ngIf="filterListOperators">
+          <mat-select
+            [(ngModel)]="filter.filterOperator"
+            (ngModelChange)="emitFilters()"
+            [ngModelOptions]="{standalone: true}">
+            <mat-option value="or">{{ 'Contains some of' | translate }}</mat-option>
+            <mat-option value="and">{{ 'Contains all of' | translate }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-chip-list>
+          <mat-chip
+            matChipRemove
+            *ngFor="let value of filter.values"
+            [removable]="true"
+            (removed)="removeFilterValue(filter.name, value)">
+            {{value}}
+            <a href="javasript:void(0)" (click)="removeFilterValue(filter.name, value)"><i class="fa fa-times"></i></a>
+          </mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+
+    <mat-action-row>
+      <button
+        *ngIf="resetEnabled"
+        type="reset"
+        mat-button
+        (click)="resetFilters()"
+        [color]="submitEnabled ? 'accent' : 'primary'">
+        {{ 'Reset' | translate }}
+      </button>
+      <button
+        mat-button
+        color="primary"
+        type="submit"
+        [disabled]="form && !form.valid"
+        (click)="emitFormAction('Submit')"
+        *ngIf="submitEnabled">
+        {{ 'Filter' | translate }}
+      </button>
+    </mat-action-row>
+  </form>
+</mat-expansion-panel>

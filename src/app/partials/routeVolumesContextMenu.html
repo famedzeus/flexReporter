@@ -1,0 +1,7 @@
+<div class="customPopover" data-ng-if="popoverCtrl.popupOpen" class="volumesPopup panel-default panel ng-scope" data-ng-style="popoverCtrl.popupStyle" style="padding:10px" data-ng-mouseleave="popoverCtrl.closePopup()">
+	<ul>
+		<li data-ng-repeat="item in popoverCtrl.menuList" data-ng-mousemove="popoverCtrl.selection=$index" data-ng-class="{'hover':popoverCtrl.selection == $index}" data-ng-click="popoverCtrl.itemSelected($index)">
+			{{item.name}}
+		</li>
+	</ul>
+</div>

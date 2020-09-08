@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  position: relative;
+
+  label {
+    font-weight: normal;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 120px;
+    margin: 0;
+  }
+
+  .colour-input {
+    display: flex;
+    flex: 1;
+
+    input.form-control {
+      width: 80%;
+    }
+  }
+}

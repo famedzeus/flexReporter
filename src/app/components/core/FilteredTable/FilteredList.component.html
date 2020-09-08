@@ -1,0 +1,56 @@
+<div class="filtered-list-title">
+	<h3 *ngIf="title">{{title | translate}}</h3>
+	<button
+		[hidden]="!options.create"
+		type="button"
+		(click)="selectAction('Create')"
+		color="primary"
+		mat-mini-fab>
+		<i class="fa fa-plus"></i>
+	</button>
+</div>
+
+<filter-form
+	*ngIf="!filterDisabled"
+	[filters]="filters"
+	[filterTitle]="title"
+	[filterRelations]="filterRelations"
+	[columns]="filterColumns"
+	[toggleable]="true"
+	[submitEnabled]="filterButton"
+	(onFilterChange)="updateFilters($event)"
+	(onFormAction)="onFilterFormAction($event)"></filter-form>
+
+<mat-list>
+	<mat-list-item *ngFor="let item of dataset" (click)="toggleSelectedItem(item)" [class.selected]="item === selectedItem">
+		<template
+			[ngTemplateOutlet]="template"
+			[ngTemplateOutletContext]="{ item: item }"></template>
+
+			<span class="option-buttons" *ngIf="options.update || options.delete || options.config">
+				<button *ngIf="options.update" type="button" class="btn btn-secondary"
+					(click)="selectAction('Edit', item, $event)">
+					<i class="fa fa-pencil"></i>
+				</button>
+				<button
+					*ngIf="options.delete" style="margin-right:3px;" type="button"
+					(click)="selectAction('Delete', item, $event)" class="btn btn-secondary" >
+					<i class="fa fa-trash-o"></i>
+				</button>
+				<button *ngIf="options.config" class="btn btn-secondary" (click)="selectAction('Settings', item, $event)">
+					<i class="fa fa-gear"></i>
+				</button>
+			</span>
+	</mat-list-item>
+</mat-list>
+
+<div [style.display]="(totalItems > pagination.size) || options.create ? '' : 'none'" class="card-footer">
+	<span>Found {{totalItems || (dataset ? dataset.length : 0)}} records.</span>
+	<mat-paginator
+		*ngIf="totalItems > pagination.size"
+		[pageSizeOptions]="pageSizes"
+		[pageIndex]="pagination.page"
+		[length]="totalItems"
+		[pageSize]="pagination.size"
+		(page)="pageChange($event)"></mat-paginator>
+</div>

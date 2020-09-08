@@ -1,0 +1,59 @@
+<mat-accordion multi="false">
+    <mat-expansion-panel *ngFor="let datasource of datasources">
+        <mat-expansion-panel-header>
+            <span class="fa fa-database"></span>&nbsp;{{datasource.name}}
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let view of datasource.views" (opened)="requestFeeds(datasource, view)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title *ngIf="view.requestingSummaries == false || !view.requestingSummaries">
+                            <span class="fa fa-file"></span>&nbsp;{{view.name}}
+                        </mat-panel-title>
+                        <mat-panel-title style="display:block" *ngIf="view.requestingSummaries == true">
+                            <span class="fa fa-feed"></span>&nbsp;Requesting summary feeds for {{datasource.name}}, {{view.name}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <ng-template matExpansionPanelContent>
+                        <mat-card style="background-color:#eee;padding:2px;">
+
+                            <mat-accordion multi="false">
+                                <mat-expansion-panel *ngFor="let summary of view.summaries">
+                                    <mat-expansion-panel-header>
+                                        <span class="fa fa-calendar"></span>&nbsp;{{summary.name}}
+                                    </mat-expansion-panel-header>
+                                    <mat-card style="margin:10px">
+                                        <div *ngIf="summary.feed.feedDateField != ''">
+                                            <h4><span class="fa fa-calendar"></span>&nbsp;{{summary.name}}</h4><i>Back {{getField(view, summary.feed.feedDateField).feedBackDays}} days, forward {{getField(view, summary.feed.feedDateField).feedForwardDays}} days using {{summary.feed.feedDateField}}</i>
+                                            <br />
+                                            <div *ngIf="summary.categorisedSummary">
+                                                <mat-form-field style="width:100%">
+                                                    <mat-select #summaryRowFieldsControl placeholder="Select categories" (change)="updateCategoryData(summary)" [formControl]="summary.categorisedSummary.selectedGroupings"
+                                                        multiple>
+                                                        <mat-option *ngFor="let field of summary.categorisedSummary.categories" [value]="field">{{field}}</mat-option>
+                                                    </mat-select>
+                                                </mat-form-field>
+                                                <mat-button-toggle (change)="toggleAllCategories($event,summary)">
+                                                    <span class="fa fa-list"></span>&nbsp;Toggle all categories
+                                                </mat-button-toggle>
+                                                <vs-chart type="horizontalBar" yRatio="10" xRatio="16" [title]="getTitle(view,summary)" [datasets]="summary.categorisedSummary.data"
+                                                    [xAxisLabels]="summary.categorisedSummary.xAxisLabels" [showLegend]="false"
+                                                    [colours]="summary.categorisedSummary.colours"></vs-chart>
+                                            </div>
+                                            <div *ngIf="!summary.categorisedSummary">
+                                                <span class="fa fa-warning"></span>&nbsp;<span class="error-text">Unable to generate any summary data.</span>
+                                            </div>
+                                        </div>
+                                    </mat-card>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+
+                        </mat-card>
+                    </ng-template>
+
+                </mat-expansion-panel>
+            </mat-accordion>
+        </ng-template>
+    </mat-expansion-panel>
+</mat-accordion>

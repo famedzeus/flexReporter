@@ -1,0 +1,101 @@
+<c-dashboard-guard [changeMade]="changeMade"></c-dashboard-guard>
+
+<!-- DASHBOARD -->
+<!-- FLOATING HEADER -->
+<mat-card class="floating-dashboard-header">
+    <!--<button mat-raised-button routerLink="/dashboards"><span class="fa fa-desktop"></span>&nbsp;Dashboards</button>-->
+    <mat-card-title>
+        <h4 style="float:left" ><span class="fa fa-desktop"></span>&nbsp;{{name}} reports dashboard</h4>
+        <!--<h5><i>Created by user {{userId}} on xx/xx/xxxx</i></h5>-->
+        <button mat-mini-fab style="float:right" [matTooltip]="'Save ' + name + ' reports dashboard'" (click)="saveChanges()"><span class="fa fa-save"></span></button>
+    </mat-card-title>
+
+</mat-card>
+
+<mat-card style="margin-top:100px;">
+    <h4>Datasources&nbsp;
+        <button mat-mini-fab matTooltip="Add new datasource" (click)="addDatasource()"><span class="fa fa-plus"></span>&nbsp;<span class="fa fa-database"></span></button>
+    </h4>
+    <!-- DATASOURCES -->
+    <mat-tab-group (focusChange)="setSelectedDataSource($event)" [selectedIndex]="currentDatasourceIndex">
+        <mat-tab *ngFor="let datasource of datasources" [label]="datasource.name">
+            <ng-template mat-tab-label>
+                <span class="fa fa-database fa-2x"></span>&nbsp;{{datasource.name}}
+            </ng-template>
+            <mat-card>
+                <mat-card-title>
+                    <button mat-mini-fab style="float:right" matTooltip="Delete {{datasource.name}} datasource" (click)="deleteDatasource(datasource)">
+                        <span class="fa fa-trash"></span>
+                    </button>
+                    <button mat-mini-fab style="float:right;margin-right:5px;" matTooltip="Duplicate {{datasource.name}} datasource" (click)="duplicateDatasource(datasource)">
+                        <span class="fa fa-copy"></span>
+                    </button>
+                </mat-card-title>
+                <!-- DATASOURCE NAME -->
+                <mat-form-field>
+                    <input [placeholder]="'Name'" type="text" matInput [(ngModel)]="datasource.name">
+                </mat-form-field>
+                <!-- ENDPOINT -->
+                <mat-form-field>
+                    <mat-select #fieldsControl placeholder="Select endpoint" [(ngModel)]="datasource.endpoint" [disabled]="datasource.views.length > 0">
+                        <mat-option *ngFor="let endpoint of appConfig.endpoints" [value]="endpoint.url">{{endpoint.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- ARCHIVE -->
+                <mat-checkbox [(ngModel)]="datasource.archive">Archive data</mat-checkbox>
+
+                <mat-card class="border-background">
+                    <h4>Views for {{datasource.name}} datasource&nbsp;
+                        <button mat-mini-fab matTooltip="Add new view" (click)="addView(datasource)" [disabled]="datasource.endpoint == ''">
+                            <span class="fa fa-plus"></span>&nbsp;<span class="fa fa-file"></span>
+                        </button>
+                    </h4>
+                    <!-- DATASOURCE VIEWS -->
+                    <mat-tab-group (selectedTabChange)="activateView($event)" [selectedIndex]="currentViewIndex">
+                        <mat-tab *ngFor="let view of datasource.views" [label]="view.name">
+                            <ng-template mat-tab-label>
+                                <span class="fa fa-file fa-2x"></span>&nbsp;{{view.name}}
+                            </ng-template>
+                            <mat-card>
+                                <mat-card-title>
+                                    <button mat-mini-fab style="float:right" matTooltip="Delete {{view.name}} view" (click)="deleteView(datasource,view)">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                    <button mat-mini-fab style="float:right;margin-right:5px;" matTooltip="Duplicate {{view.name}}" (click)="duplicateView(datasource,view)">
+                                        <span class="fa fa-copy"></span>
+                                    </button>
+                                </mat-card-title>
+                                <mat-card-content>
+                                    <mat-form-field>
+                                        <input [placeholder]="'View name'" type="text" matInput [(ngModel)]="view.name">
+                                    </mat-form-field>
+                                    <mat-form-field>
+                                        <input matInput type="number" placeholder="Sample record limit" [(ngModel)]="view.recordLimit">
+                                    </mat-form-field>
+                                    &nbsp;<span class="fa fa-info-circle"></span>&nbsp;<i>Maximum sample is 5000 records</i>
+                                </mat-card-content>
+                            </mat-card>
+                            <c-view (deleteSummary)="deleteSummary($event)" (addSummary)="addSummary($event)" (duplicateSummary)="duplicateSummary($event)"
+                                (updateSummaryFeeds)="updateSummaryFeeds($event)" [summaryIndex]="currentSummaryIndex" [view]="view"
+                                (onChange)="changesMade()" [active]="view.active" [init]="view.init" ([recordLimit])="view.recordLimit"
+                                [endpoint]="datasource.endpoint" [archive]="datasource.archive" (onError)="onError($event)">
+                            </c-view>
+                        </mat-tab>
+                    </mat-tab-group>
+                </mat-card>
+            </mat-card>
+        </mat-tab>
+    </mat-tab-group>
+</mat-card>
+
+<ng-template #detailsTmpl let-value="value">
+    <div *ngFor="let ds of value.datasources">
+        <span class="fa fa-database"></span>&nbsp;{{ds}}
+    </div>
+    <div *ngFor="let view of value.views">
+        <span class="fa fa-file"></span>&nbsp;{{view}}
+    </div>
+    <span *ngFor="let summary of value.summaries">
+        <span class="fa fa-signal"></span>&nbsp;{{summary}}&nbsp;
+    </span>
+</ng-template>

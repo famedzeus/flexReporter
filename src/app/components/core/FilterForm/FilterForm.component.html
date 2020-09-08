@@ -1,0 +1,57 @@
+<button mat-button
+  class="toggle-button"
+  color="accent"
+  [matTooltip]="'show_filter' | translate"
+  *ngIf="toggleable"
+  (click)="toggleForm()">
+  <i class="fa fa-search" [class.fa-search]="!showFilters" [class.fa-chevron-up]="showFilters"></i>
+</button>
+<mat-card *ngIf="showFilters">
+  <mat-card-header *ngIf="!toggleable && !titleDisabled">
+    <mat-card-title>
+      <span>
+        <i class="fa fa-search"></i>
+        {{filterTitle | translate}}
+      </span>
+    </mat-card-title>
+  </mat-card-header>
+  <form name="filterForm" [formGroup]="form">
+    <mat-card-content>
+      <validatable-input
+        style="margin-right: 2rem;"
+        *ngFor="let filter of filterFields"
+        [allowIndeterminate]="true"
+        [id]="'filterField-' + filter.key"
+        [class.has-error]="form && !form.controls[filter.key].valid"
+        [form]="form"
+        [field]="filter"
+        [name]="filter.key"
+        [label]="filter.displayName"
+        [type]="filter.fieldType"
+        [options]="filter.options"
+        canEdit="true"
+        [(model)]="filter.value"
+        disableLengthHint="true"
+        [constraints]="filter.constraints"></validatable-input>
+
+    </mat-card-content>
+    <mat-card-footer>
+      <button type="reset"
+        *ngIf="resetEnabled"
+        mat-button
+        (click)="resetFilters()"
+        [color]="submitEnabled ? 'accent' : 'primary'">
+        {{ 'Reset' | translate }}
+      </button>
+      <button
+        mat-button
+        color="primary"
+        type="submit"
+        [disabled]="form && !form.valid"
+        (click)="emitFormAction('Submit')"
+        *ngIf="submitEnabled">
+        {{ 'Filter' | translate }}
+      </button>
+    </mat-card-footer>
+  </form>
+</mat-card>

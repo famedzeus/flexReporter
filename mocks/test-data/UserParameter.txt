@@ -1,0 +1,73 @@
+Table
+UserParameter
+{"textColour"}
+{Params:[Default1,0.1,8]}|Solution1|Default
+{Params:[Default2,0.125,8]}|Solution2|Default
+{Params:[Default3,0.15,8]}|Solution3|Default
+{Params:[Default4,0.175,8]}|Solution4|Default
+{Params:[Default5,0.2,8]}|Solution5|Default
+{Params:[Default6,0.225,8]}|Solution6|Default
+{Params:[Default7,0.25,8]}|Solution7|Default
+{Params:[Default8,0.3,8]}|Solution8|Default
+{Params:[#FFFFFF]}|Colour01B/W|Default
+{Params:[#A52A2A]}|Colour01CAN|Default
+{Params:[#8B4513]}|Colour01CAP|Default
+{Params:[#FFFF00]}|Colour01EAV|Default
+{Params:[#A9A9A9]}|Colour01ED|Default
+{Params:[#1E90FF]}|Colour01FAK|Default
+{Params:[#4B0082]}|Colour01GAB|Default
+{Params:[#000000]}|Colour01GAC|Default
+{Params:[#C0C0C0]}|Colour01KAD|Default
+{Params:[#BC8F8F]}|Colour01KAX|Default
+{Params:[#000000]}|Colour01KH3|Default
+{Params:[#C0C0C0]}|Colour01KY0|Default
+{Params:[#B22222]}|Colour01NAH|Default
+{Params:[#DDA0DD]}|Colour01NAJ|Default
+{Params:[#D8BFD8]}|Colour01NAX|Default
+{Params:[#FFFAFA]}|Colour01QAB|Default
+{Params:[#1E90FF]}|Colour01RBE|Default
+{Params:[#0000FF]}|Colour01RBN|Default
+{Params:[#FF0000]}|Colour01Z10|Default
+{Params:[#000000]}|Colour01Z11|Default
+{Params:[#FFFFFF]}|Colour01326|Default
+{Params:[#FFE4B5]}|Colour01RHD|Default
+{Params:[#FFFFFF]}|Colour02WHT|Default
+{Params:[#C0C0C0]}|Colour02MGY|Default
+{Params:[#A9A9A9]}|Colour02DGY|Default
+{Params:[#E6E6FA]}|ColourLHD|Default
+{Params:[#9370DB]}|ColourRHD|Default
+{Params:[#000080]}|ColourLeather|Default
+{Params:[#00BFFF]}|ColourDiesel|Default
+{Params:[#008000]}|ColourTx|Default
+{Params:[#7CFC00]}|ColourGlass Roof|Default
+{Params:[#F4A460]}|ColourPGF|Default
+{Params:[#FF0000]}|ColourR9M|Default
+{Params:[#87CEFA]}|ColourAVM|Default
+{Params:[#FF1493]}|ColourMultilink4|Default
+{Params:[#1E90FF]}|ColourP32S Diesel|Default
+{Params:[#C0C0C0]}|ColourFull Leather|Default
+{Params:[#F0F8FF]}|ColourH5FT|Default
+{Params:[#D2D2D2]}|ColourMR20|Default
+{Params:[#FF4500]}|ColourR9M CVT|Default
+{Params:[#48D1CC]}|ColourH5FT CVT|Default
+{Params:[#EE863B]}|ColourMR16 DDT|Default
+{Params:[#F8F8F8]}|ColourEuro 6|Default
+{Params:[#00BFFF]}|ColourJ111|Default
+{Params:[#7D26CD]}|ColourZE06|Default
+{Params:[#D9D9D9]}|ColourF157|Default
+{Params:[#FF0000]}|ColourE121|Default
+{Params:[#FF8D41]}|ColourH151|Default
+{Params:[#FFFF00]}|Colour4WD L1|Default
+{Params:[#FFFF00]}|Colour4WD L2|Default
+{Params:[#EEEEEE]}|ColourHard Car|Default
+{Params:[#0000FF]}|Colour1.6 Turbo|Default
+{Params:[#CD3333]}|ColourNISMO|Default
+{Params:[#FF4500]}|ColourSlide Seat|Default
+{Params:[#8A2BE2]}|ColourFixed Seat|Default
+{Params:[#68228B]}|Colour12SCTOT|Default
+{Params:[#F0F8FF]}|ColourSports Pack|Default
+{Params:[#FFA500]}|Colour1.2 Turbo|Default
+{Params:[#A9A9A9]}|ColourEARLIERPERIOD|Default
+{Params:[#A9A9A9]}|ColourLATERPERIOD|Default
+{Params:[#B0C4DE]}|ColourTHISPERIOD|Default
+

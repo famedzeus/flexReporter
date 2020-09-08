@@ -1,0 +1,24 @@
+system-events {
+  display: block;
+
+  .severity-error {
+    background-color: #ff0000
+  }
+  .severity-warning {
+    background-color: #cccc00
+  }
+  .severity-information {
+    background-color: #00cc00
+  }
+  .severity-information,
+  .severity-warning,
+  .severity-error {
+    c-inline-input > div {
+      color: transparent;
+      .cell-icon {
+        color: initial;
+        float: none;
+      }
+    }
+  }
+}

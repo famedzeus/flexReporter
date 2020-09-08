@@ -1,0 +1,6 @@
+Table
+RuleAttSetRelationship
+BP|Batch Parameter
+RP|Recovery Parameter
+SP|Single Parameter
+

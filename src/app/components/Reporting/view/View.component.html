@@ -1,0 +1,265 @@
+<mat-card *ngIf="badEndpoint">
+    <h4><span class="fa fa-warning error-text"></span>&nbsp;<span class="error-text">Datasource not responding. Delete view and amend endPoint name.</span>
+    </h4>
+</mat-card>
+<mat-card *ngIf="noDataInDataSource">
+    <h4><span class="fa fa-warning error-text"></span>&nbsp;<span class="error-text">Datasource appears to have no data. Delete view and amend endPoint name.</span>
+    </h4>
+</mat-card>
+<mat-card *ngIf="exceedsSafeLimit">
+    <h4><span class="fa fa-warning error-text"></span>&nbsp;<span class="error-text">{{MAX_SAMPLE_SIZE}} record limit exceeded. Adjust filters to lower number of records.</span>
+        <a (click)="getData(true)">&nbsp;Retry</a>
+    </h4>
+</mat-card>
+
+<mat-card id="fieldAndFilter">
+    <!--<mat-card-title (click)="getData()">
+        <h5><span class="fa fa-database"></span>&nbsp;<span class="fa fa-arrow-right"></span>&nbsp;<span class="fa fa-file"></span>&nbsp;{{endpoint}}</h5>                -->
+    <!--</mat-card-title>-->
+    <mat-tab-group>
+        <mat-tab [label]="'Choose columns and filters'">
+            <ng-template mat-tab-label>
+                <span class="fa fa-calendar"></span>&nbsp;Choose columns and filters
+            </ng-template>
+            <mat-card class="border-background">
+                <!--<mat-spinner *ngIf="loadingIndicator"></mat-spinner>-->
+                <mat-card>
+                    <mat-card-content>
+                        <mat-card-title>
+                            <h4><span class="fa fa-pencil"></span>&nbsp;{{view.name}}&nbsp;columns and filters</h4>
+                        </mat-card-title>
+                    </mat-card-content>
+                    <!-- Field list -->
+                    <mat-card-content>
+                        <mat-form-field>
+                            <mat-select #fieldsControl placeholder="Select fields" (change)="syncAllFields()" [formControl]="selectedFields" multiple>
+                                <mat-option *ngFor="let field of extractedFields" [value]="field.prop">{{field.prop}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-button-toggle [checked]="useAllFields" (change)="toggleSelectedFields($event)"><span class="fa fa-list"></span>&nbsp;Use all fields</mat-button-toggle>
+
+                    </mat-card-content>
+                    <mat-accordion [id]="view.name" class="view-accordion">
+                        <mat-expansion-panel class="border-background">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title><span class="fa fa-calendar"></span>&nbsp;Configure fields &nbsp;
+                                    <span *ngIf="filtersApplied()" class="fa fa-pencil"></span>
+                                </mat-panel-title>
+                                <mat-panel-description>Define filters, converters and ranges</mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <ng-template matExpansionPanelContent>
+                                <mat-accordion multi="true">
+                                    <mat-expansion-panel *ngFor="let field of view.selectedFields; let i = index">
+                                        <mat-expansion-panel-header (mouseenter)="field.hovering=true" (mouseleave)="field.hovering=false">
+                                            <mat-panel-title>
+                                                <span class="fa fa-eye"></span>&nbsp;{{field.name}}&nbsp;({{field.type}})
+                                                &nbsp;
+                                                <span *ngIf="field.useAsFeed == true">
+                                                    <span class="fa fa-feed"></span><i>&nbsp;Date feed field</i>
+                                                </span>
+                                                &nbsp;
+                                                <span *ngIf="hasFilter(field)" class="fa fa-pencil"></span>
+                                                <span *ngIf="field.hovering == true && !hasFilter(field)" (click)="deselectField(field)"><span class="fa fa-close" title="Remove from report."></span></span>
+                                            </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                        <div>
+
+                                            <c-field-converter (converterChanged)="onChange.emit()" [field]="field" (overrideField)="overrideFieldType(field)"></c-field-converter>
+
+                                            <!-- COLUMN ALIAS -->
+                                            <!--<mat-form-field>
+                                            <input matInput type="text" placeholder="Meaningful report name" (change)="getFieldCustomisations(field)" [(ngModel)]="field.customisations.alias">
+                                            </mat-form-field>-->
+
+                                            <!--{{field | json}}-->
+                                            <mat-form-field *ngIf="field.type === 'string'">
+                                                <input (change)="onChange.emit()" [placeholder]="field.prop + ' filter'" type="text" matInput [matAutocomplete]="auto" (keyup)="stringExprTypeAhead(field)"
+                                                    [(ngModel)]="field.stringExpr">
+                                                <mat-autocomplete #auto="matAutocomplete">
+                                                    <mat-option *ngFor="let data of field.filteredDataChoices" [value]="data.option">
+                                                        {{ data.option }}
+                                                    </mat-option>
+                                                </mat-autocomplete>
+                                            </mat-form-field>
+
+                                            <!-- Date (Range) -->
+                                            <mat-card-content *ngIf="field.type === 'date' || field.type === 'utcdate'">
+                                                <mat-card-content *ngIf="!field.useAsFeed">
+                                                    <mat-form-field>
+                                                        <input matInput (change)="onChange.emit()" [(ngModel)]="field.fromDate" [matDatepicker]="picker1" [placeholder]="'from ' + field.prop">
+                                                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                                        <mat-datepicker #picker1></mat-datepicker>
+                                                    </mat-form-field>
+                                                    <mat-form-field>
+                                                        <input matInput (change)="onChange.emit()" [(ngModel)]="field.toDate" [matDatepicker]="picker2" [placeholder]="'to ' + field.prop">
+                                                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                                        <mat-datepicker #picker2></mat-datepicker>
+                                                    </mat-form-field>
+                                                </mat-card-content>
+                                                <mat-card-content>
+                                                    <mat-checkbox (change)="onChange.emit()" [(ngModel)]="field.useAsFeed">Use this date to provide a summary feed on your dashboard</mat-checkbox>
+                                                </mat-card-content>
+                                                <mat-card-content *ngIf="field.useAsFeed == true">
+                                                    <mat-form-field>
+                                                        <input (change)="onChange.emit()" [placeholder]="'Number of days back'" type="number" matInput [(ngModel)]="field.feedBackDays">
+                                                    </mat-form-field>
+                                                    <mat-form-field>
+                                                        <input (change)="onChanged.emit()" [placeholder]="'Number of days forward'" type="number" matInput [(ngModel)]="field.feedForwardDays">
+                                                    </mat-form-field>
+                                                </mat-card-content>
+                                            </mat-card-content>
+
+                                            <!-- Number (Range) -->
+                                            <mat-card-content *ngIf="field.type === 'number'">
+                                                <mat-form-field>
+                                                    <input (change)="onChange.emit()" [placeholder]="'from ' + field.prop" type="number" matInput [(ngModel)]="field.fromNumber">
+                                                </mat-form-field>
+                                                <mat-form-field>
+                                                    <input (change)="onChange.emit()" [placeholder]="'to ' + field.prop" type="number" matInput [(ngModel)]="field.toNumber">
+                                                </mat-form-field>
+                                            </mat-card-content>
+
+                                            <!-- Boolean -->
+                                            <mat-card-content *ngIf="field.type === 'boolean'">
+                                                <mat-checkbox (change)="onChange.emit()" [(ngModel)]="field.checked">{{field.prop}}</mat-checkbox>
+                                            </mat-card-content>
+
+                                        </div>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </ng-template>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <mat-card-content>
+                        <mat-card-actions *ngIf="view.selectedFields.length > 0" style="text-align:right">
+                            <button mat-raised-button (click)="resetFilters()"><span class="fa fa-undo"></span>&nbsp;Clear filters</button>
+                            <button mat-raised-button (click)="filter(view.recordLimit,true)"><span class="fa fa-filter"></span>&nbsp;Update results</button>
+                        </mat-card-actions>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card>
+                    <mat-card>
+                        <mat-card-title>Filtered results&nbsp;<span *ngIf="gettingFinalRecordCount"><b><span class="fa fa-spinner fa-spin-fast"></span></b></span></mat-card-title>
+                        <p><b>Filters applied:</b><i>{{getDescription(view)}}</i></p>
+                        <p *ngIf="gettingFinalRecordCount"><b><span class="fa fa-spinner fa-spin-fast"></span>&nbsp;Requesting final report record count</b></p>
+                        <p *ngIf="!gettingFinalRecordCount"><b>{{actualRecordCount}}</b> records will appear in CSV report.</p>
+                        <mat-card-actions style="text-align:right">
+                            <mat-form-field>
+                                <input [placeholder]="'Report record limit'" type="number" matInput [(ngModel)]="csvLimit">
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input [placeholder]="'Report CSV name'" type="text" matInput [(ngModel)]="csvName">
+                            </mat-form-field>
+                            <button mat-raised-button [disabled]="csvName == ''" (click)="exportCSV(resultsTable,csvName)"><span class="fa fa-download"></span>&nbsp;Export CSV</button>
+                        </mat-card-actions>
+                    </mat-card>
+                    <br />
+                    <mat-card>
+                        <mat-card-title>
+                            <h4><span class="fa fa-pencil"></span>&nbsp;Sample of the report from {{view.name}}&nbsp;<!--({{dataSet.length}} records in sample)-->
+                            </h4>
+                        </mat-card-title>
+                        <mat-card-content>
+
+                            <ag-grid-angular #resultsTable style="height: 520px;" class="ag-theme-blue" [rowData]="dataSet" [columnDefs]="view.selectedFields"
+                                [gridOptions]="gridOptions">
+                            </ag-grid-angular>
+
+                        </mat-card-content>
+                    </mat-card>
+                </mat-card>
+            </mat-card>
+        </mat-tab>
+        <mat-tab [label]="'Create summaries'">
+            <ng-template mat-tab-label>
+                <span class="fa fa-signal"></span>&nbsp;Summaries ({{view.summaries.length}})
+            </ng-template>
+            <mat-card class="border-background">
+                <mat-card-title>
+                    <h4>Summaries for {{view.name}} view&nbsp;
+                        <button mat-mini-fab matTooltip="Add new summary" (click)="add(view)">
+                            <span class="fa fa-plus"></span>&nbsp;<span class="fa fa-signal"></span>
+                        </button>
+                    </h4>
+                </mat-card-title>
+                <i>{{getDescription(view)}}</i>
+                <mat-tab-group [selectedIndex]="summaryIndex" (focusChange)="updateSummary(dataSet,endpoint,summary)">
+                    <mat-tab *ngFor="let summary of view.summaries">
+                        <ng-template mat-tab-label>
+                            <span class="fa fa-signal fa-2x"></span>&nbsp;{{summary.name}}
+                            <span *ngIf="summary.regenerate" class="error-text"><span class="fa fa-warning"></span>&nbsp;Update</span>
+                        </ng-template>
+                        <!-- SUMMARY -->
+                        <mat-card>
+                            <mat-card-content>
+                                <mat-card-title>
+                                    <button mat-mini-fab style="float:right" (click)="remove(view,summary)" matTooltip="Delete {{summary.name}} summary">
+                                        <span class="fa fa-trash"></span>
+                                    </button>
+                                    <button mat-mini-fab style="float:right;margin-right:5px;" matTooltip="Duplicate {{summary.name}} summary" (click)="duplicate(view, summary)">
+                                        <span class="fa fa-copy"></span>
+                                    </button>
+                                </mat-card-title>
+                                <mat-card-title>
+                                    <h4>&nbsp;</h4>
+                                </mat-card-title>
+                                <mat-form-field>
+                                    <input [placeholder]="'Name'" type="text" matInput [(ngModel)]="summary.name">
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-select #summaryRowFieldsControl placeholder="Categorise by" (change)="onChange.emit()" [formControl]="summary.selectedSummaryRowFields"
+                                        multiple>
+                                        <mat-option *ngFor="let field of view.selectedFields" [value]="field.prop">{{field.prop}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <mat-form-field>
+                                    <mat-select #summaryColumnFieldsControl placeholder="Select column field" (change)="onChange.emit()" [formControl]="summary.selectedSummaryColumnFields">
+                                        <mat-option *ngFor="let field of view.selectedFields" [value]="field.prop">{{field.prop}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <button mat-raised-button (click)="viewService.buildSummary(dataSet,endpoint,summary)" [disabled]="canBuildSummary(summary)">
+                                    <span class="fa fa-signal" [ngClass]="{'fa-spin':loadingIndicator == true}"></span>
+                                    &nbsp;Generate sample summary
+                                </button>
+                            </mat-card-content>
+                            <mat-card-content *ngIf="summary.summaryRows">
+                                <!-- SAMPLE SUMMARY -->
+                                <mat-card-title>
+                                    <h4><span class="fa fa-signal"></span>&nbsp;{{summary.name}} Sample summary of {{view.name}}</h4>
+                                    <h5><i>Of a sample {{dataSet.length}} records show the total of each {{summary.summaryColumnField.name}} categorised by 
+                                        <span *ngFor="let rowField of summary.summaryRowFields">{{rowField.name}},</span></i></h5>
+                                </mat-card-title>
+                                <ag-grid-angular #summaryTable style="height: 520px;" class="ag-theme-blue" [rowData]="summary.summaryRows" [columnDefs]="summary.summaryColumns"
+                                    [gridOptions]="gridOptions">
+                                </ag-grid-angular>
+                            </mat-card-content>
+                            <mat-card-actions style="text-align:left;padding:10px;">
+                                <!-- LIVE FEED -->
+                                <mat-form-field>
+                                    <mat-select #feedDateFieldControl placeholder="Use feed date field" (change)="summary.feed.feedDateField = summary.feed.selectedFeedDateField.value;onChange.emit()"
+                                        [formControl]="summary.feed.selectedFeedDateField">
+                                        <mat-option value="">No feed fields</mat-option>
+                                        <mat-option *ngFor="let field of getFeedFields()" [value]="field.prop">{{field.prop}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <span *ngIf="!hasFeedFields()"><span class="fa fa-info-circle"></span>&nbsp;<i>Specify a date field to be used as a feed in the view filters first then you can choose it here</i></span>
+                                <mat-card *ngIf="summary.feed.feedDateField != ''">
+                                    <mat-checkbox labelPosition="before" [(ngModel)]="summary.feed.liveFeed"><span class="fa fa-desktop"></span>&nbsp;Activate dashboard feed</mat-checkbox>&nbsp;
+                                </mat-card>
+                            </mat-card-actions>
+                            <mat-card-actions style="text-align:right">
+                                <mat-form-field>
+                                    <input [placeholder]="'Report record limit'" type="number" matInput [(ngModel)]="csvLimit">
+                                </mat-form-field>
+                                <mat-form-field [style.width]="summary.csvSummaryName.length * 8 + 'px'">
+                                    <input [placeholder]="'CSV name'" type="text" matInput [(ngModel)]="summary.csvSummaryName" [title]="summary.csvSummaryName">
+                                </mat-form-field>
+                                <button mat-raised-button (click)="exportSummaryCSV(summary)"><span class="fa fa-download"></span>&nbsp;Export Summary CSV</button>
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-tab>
+                </mat-tab-group>
+            </mat-card>
+        </mat-tab>
+    </mat-tab-group>
+</mat-card>

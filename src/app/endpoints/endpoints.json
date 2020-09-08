@@ -1,0 +1,5 @@
+[
+	{"name":"Routes","url":"routeInformation"},
+	{"name":"Slots","url":"slotInformation"},
+	{"name":"Attributes","url":"routeAttributes"}
+]
